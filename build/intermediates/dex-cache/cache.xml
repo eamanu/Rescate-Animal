@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-10.0.1_d3ad7de98771d178ec381a2ad307e50049e200b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-10.0.1_ea48035a981bf27c905da122cb2ce25bf1fbd026.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-10.0.1_2df1f607f5bca388e89c779748748f69dff14039.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-10.0.1_0efa5ca8085c793710b93d19710f3c8a3cbcfd46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-10.0.1_89798b91c34080d10b5730e4cd36d93e7a80ebcb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.0.1_725665dff27da22624506bc5757c8b2165781e23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-api-10.0.1_048c4f5bfe54807650423b8198f6d7d108d42856.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_55e74f1f292740ba46f4b9177fc21820d90e5485.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gass-10.0.1_a1bc879b37eed493aeeb89df01cc1d790a892d0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-10.0.1_0ecdadcfdac0d2f117c6fea2db7182585e6934d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-10.0.1_f8016f7f3f4bdb5d06b6aee19f1f5425a2617300.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_e20425a7de86c3e2fcc8467ba1338d199c3f8e6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_11e3d51550e8dc64dad852bbc4bf9244b70163cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-24.0.0_727d293ffa1e56adde9cdea04919a0e3c1116c4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-10.0.1_e78a15979f87ff660006b634e680d951dac5b63e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-instantapps-10.0.1_b9e4b08a114f251037b562b0b57e93fe51c715dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-10.0.1_c7bde2d2dd7651081aa4bd1b8e261e573d43fdce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_3afaf3c303ef3699c234e39daf8e2a9914c90ecc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.0.1_8e210386f363ec37882d4992d6cf07df6670d726.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-places-10.0.1_0e4fe2cd1c709e585491afcfa1e84e6df9465eaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-10.0.1_4fba976a510760752e833bfcb19e5f747daf1093.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.0_0fbe9ec31484e3c7977733e4ea0c14af82d2fd03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-10.0.1_a5ce52eceec8eeaedbe0f4cf4ca15e60f1ec4141.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_533fc5e4ee4254c9a63ebcda8a62618973fba80b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-appindexing-10.0.1_e153d2b62e3622d4cc9d0fcaf673a54b5bccaa82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-10.0.1_f533cf75ae5c9859978c23870e4a055fe1353538.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-10.0.1_9e8a1f172ba35bfc8a0054cd942be94ade103222.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-10.0.1_a50fbb7d68ce92e4d51244fda519d5ab40f49585.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-10.0.1_51038558f749c2751f73c3ecaba396c21e46342f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_6162a6de2f61d67d3d3314e10d4da2b0be12cf79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-10.0.1_a3c6ae1377f4570c870d220e472ae5a739f576ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-10.0.1_aaddf63aac35802a37104165f6ff2312cd131c01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-10.0.1_323ce8ff74c6a007336e47da165f82974d64ee00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-10.0.1_032a91410713712864ae938de1daaa72f4b18569.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-10.0.1_a65bec9f7afa9a3968f974e0580318e849914e3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.0.1_97c014c135b1c15ce46f6e3c1b83a48686f5e867.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-24.0.0_a6f719dd73359f5a728f049eda5831ea48ca293a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-10.0.1_dc20bd529938a18d6de785e60400a1b35246915b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-10.0.1_a12767aaff13af0e18592dd0fd89215077ead4b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_7a631239e887d67e87ac1bee45309f0b98195fdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.0_fa9399e44c6ea7fb08509d0dfaf000a1a5d5eedd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-awareness-10.0.1_77371f3f25d56a5520a7c6ad4f501927c8d73256.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-10.0.1_535b91c88a6a4f09544ebd90dd28bcc471c8885f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_e22eb2b0de63413d69311c5491925b92620bdc80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-10.0.1_62b51b18f38d5402c97d9a45ba9b648d4d6f74d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_338f1e3dad44e4c3089743ae9b9a1628fee05357.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-10.0.1_07c5ac2df15ddb4dfbbd595e791a01c810c69960.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_c258464112c1e62dcb1af60ad7e79ed15c4f4738.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-10.0.1_da6e4235f743131e574f27956912e43db4817dda.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-10.0.1_71233c0008fd4bc4f8be21e0630706ff6cccff14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-10.0.1_ad2288edd80b38a1c7ab847e7eb661549edab2f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_6675e77f3f47863197d3dbec1c950d07ceb26099.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-10.0.1_1eccf8d745c20928ce21259e5901ed9ff15ea99b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-10.0.1_e3c092d088390a99e7986c738584488656762677.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-framework-10.0.1_6697214c0a85ca079b1b89d2aa0041acbe1653cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-10.0.1_ba2ffbbfccf41f2915b4e56a4649341c676184c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.0.1_d7153046282a934f634f42a07a829dc39b15a885.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-10.0.1_bd646ba64e152a3f39d7aa083ac0594648dba0c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_c4bf4008547c2a82b2a2ac18fcaa7c98c218347c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-10.0.1_f5acdfa82f3ea2030421d3f450482b10e0872af8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-clearcut-10.0.1_12759020c8e309de9652aae45dc6d8a720b7484c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-10.0.1_0439e9a598abda905f14b615f5945ef7aa5209dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-10.0.1_47691f17243ebcbf27f0ef8afd1b987e7d7c7950.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_8712fe30067329ed66831b68d5ee57463667b3e7.jar" />
+    </item>
+
+</items>

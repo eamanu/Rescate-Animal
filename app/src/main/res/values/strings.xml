@@ -16,4 +16,5 @@
         completions."
     </string>
     <string name="title_activity_denuncia">Pide Rescate</string>
+    <string name="title_activity_postion_animal">Posicion del Animal</string>
 </resources>

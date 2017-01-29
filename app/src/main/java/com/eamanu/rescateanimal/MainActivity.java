@@ -1,5 +1,6 @@
 package com.eamanu.rescateanimal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.support.design.widget.FloatingActionButton;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        /*
        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,12 +28,22 @@ public class MainActivity extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
     // Example of a call to a native method
     TextView tv = (TextView) findViewById(R.id.sample_text);
     tv.setText(stringFromJNI());
     }
+
+    /**
+     * Me voy a Denuncia_activity.xml
+     */
+    public void Denunciar (View view ){
+        Intent intent = new Intent ( this, DenunciaActivity.class);
+        startActivity(intent);
+
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -66,3 +78,4 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("native-lib");
     }
 }
+

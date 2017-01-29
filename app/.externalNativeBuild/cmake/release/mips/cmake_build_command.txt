@@ -1,0 +1,15 @@
+Executable : /home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/cmake
+arguments : 
+-H/home/eamanu/AndroidStudioProjects/RescateAnimal/app
+-B/home/eamanu/AndroidStudioProjects/RescateAnimal/app/.externalNativeBuild/cmake/release/mips
+-GAndroid Gradle - Ninja
+-DANDROID_ABI=mips
+-DANDROID_NDK=/home/eamanu/Android/Sdk/ndk-bundle
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/cmake/release/obj/mips
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_MAKE_PROGRAM=/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja
+-DCMAKE_TOOLCHAIN_FILE=/home/eamanu/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DANDROID_NATIVE_API_LEVEL=15
+-DCMAKE_CXX_FLAGS=
+jvmArgs : 
+
