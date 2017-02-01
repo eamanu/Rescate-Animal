@@ -1,4 +1,4 @@
-#Sun Jan 29 16:01:01 ART 2017
+#Sun Jan 29 22:53:11 ART 2017
 base.0=/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes2.dex
 renamed.0=classes.dex
