@@ -23,6 +23,14 @@
     <uses-feature android:name="android.hardware.location.gps" />
     <!-- Para obtener la posición por red,para la denuncia -->
     <user-feature android:name="android.hardware.location.network" />
+    <!-- Para acceder a la cámara -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Usamos la características de la cámra -->
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <!-- Para almacenar las imagenes -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- Include required permissions for Google Mobile Ads to run -->
     <uses-permission android:name="android.permission.INTERNET" />

@@ -59,7 +59,8 @@
                 android:id="@+id/BtnCamera"
                 android:layout_alignParentRight="true"
                 android:layout_margin="15dp"
-                android:text="Camera"/><!--Cambiar-->
+                android:text="Camera"
+                android:onClick="getPicture"/><!--Cambiar-->
 
             <Button
                 android:layout_width="150dp"
