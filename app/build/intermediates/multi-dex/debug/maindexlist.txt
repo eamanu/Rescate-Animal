@@ -261,6 +261,7 @@ com/google/android/gms/common/api/Api$ApiOptions.class
 com/google/android/gms/internal/zzza$3.class
 com/google/android/gms/internal/zzqm.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase.class
+com/eamanu/rescateanimal/Denuncia.class
 com/google/android/gms/auth/api/credentials/CredentialPickerConfig.class
 com/google/android/gms/internal/zznc.class
 android/support/v4/media/MediaBrowserCompat$ConnectionCallback$ConnectionCallbackInternal.class
@@ -307,8 +308,8 @@ com/google/android/gms/internal/zzno.class
 android/support/design/widget/ViewOffsetBehavior.class
 com/google/android/gms/appinvite/AppInviteInvitation$IntentBuilder.class
 android/support/v7/widget/RecyclerView$RecyclerListener.class
-android/support/v4/widget/SimpleCursorAdapter.class
 com/google/android/gms/nearby/messages/internal/zzad.class
+android/support/v4/widget/SimpleCursorAdapter.class
 com/google/android/gms/wearable/NodeApi.class
 com/google/ads/mediation/AbstractAdViewAdapter.class
 com/google/android/gms/internal/zzlz.class
@@ -814,6 +815,7 @@ android/support/v7/widget/RecyclerView$OnFlingListener.class
 com/google/android/gms/fitness/Fitness.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
 com/google/android/gms/nearby/messages/Strategy.class
+com/squareup/picasso/RequestCreator.class
 com/google/android/gms/internal/zzgn.class
 com/google/android/gms/ads/internal/zzd.class
 com/google/android/gms/auth/api/credentials/CredentialPickerConfig$Prompt.class
@@ -823,14 +825,15 @@ com/google/android/gms/internal/zzmd.class
 com/google/android/gms/internal/zzbjr.class
 android/support/v7/widget/RecyclerView$3.class
 android/support/design/widget/SwipeDismissBehavior.class
+com/squareup/picasso/Downloader$Response.class
 android/support/v7/widget/LinearLayoutCompat.class
 android/support/design/widget/ValueAnimatorCompat$AnimatorUpdateListener.class
 com/google/android/gms/internal/zzmh.class
 com/google/android/gms/appindexing/AppIndexApi.class
 android/support/v4/media/MediaBrowserCompat$ItemCallback.class
 com/google/android/gms/dynamic/zzg$zza.class
-android/support/v4/widget/SearchViewCompat$OnCloseListenerCompat.class
 com/google/android/gms/internal/zzoy.class
+android/support/v4/widget/SearchViewCompat$OnCloseListenerCompat.class
 android/support/v7/view/menu/CascadingMenuPopup$CascadingMenuInfo.class
 com/google/android/gms/internal/zzqk.class
 android/support/v7/widget/AdapterHelper.class
@@ -923,6 +926,7 @@ android/support/v4/view/ViewCompat$ICSViewCompatImpl.class
 android/support/v4/view/KeyEventCompat.class
 com/google/android/gms/internal/zzft.class
 com/google/android/gms/location/places/PlaceFilter.class
+com/squareup/picasso/Picasso$Builder.class
 android/support/design/widget/CoordinatorLayout$DefaultBehavior.class
 android/support/v7/widget/GapWorker$LayoutPrefetchRegistryImpl.class
 android/support/v7/widget/MenuItemHoverListener.class
@@ -1088,6 +1092,7 @@ com/google/android/gms/internal/zzec.class
 com/google/android/gms/internal/zzqc.class
 android/support/design/widget/CoordinatorLayout$1.class
 android/support/annotation/Px.class
+com/squareup/picasso/Picasso.class
 com/google/android/gms/ads/search/SearchAdRequest.class
 android/support/annotation/AttrRes.class
 com/google/android/gms/internal/zzej.class

@@ -1,7 +1,11 @@
 package com.eamanu.rescateanimal;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,8 +14,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
+
+    /**RecyclerView lista de denuncias.*/
+    private RecyclerView recyclerView;
+
+    /**Referencia a la base de datos*/
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +35,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // create the recycler view
+        recyclerView = (RecyclerView) findViewById(R.id.denuncias_list);
+        recyclerView.setHasFixedSize(true);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setReverseLayout(true);
+        layoutManager.setStackFromEnd(true);
+        recyclerView.setLayoutManager(layoutManager);
+
+
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Denuncias");
 
         /*
        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -30,9 +57,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-    // Example of a call to a native method
-    TextView tv = (TextView) findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
+
     }
 
     /**
@@ -76,6 +101,61 @@ public class MainActivity extends AppCompatActivity {
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
+    }
+
+    @Override
+    protected void onStart ( ){
+        super.onStart();
+
+        FirebaseRecyclerAdapter<Denuncia, DenunciaViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Denuncia, DenunciaViewHolder>(
+                Denuncia.class,
+                R.layout.denuncia_row,
+                DenunciaViewHolder.class,
+                mDatabase
+        ) {
+            @Override
+            protected void populateViewHolder(DenunciaViewHolder viewHolder, Denuncia model, int position) {
+                viewHolder.setCom(model.getComentario());
+                viewHolder.setDireccion(model.getDireccion());
+                viewHolder.setDate(model.getTimestamp());
+                //viewHolder.setImage(getApplicationContext(), model.getPathPhoto());
+            }
+        };
+
+        recyclerView.setAdapter(firebaseRecyclerAdapter);
+    }
+
+
+    public static class DenunciaViewHolder extends RecyclerView.ViewHolder{
+
+        View mView;
+        public DenunciaViewHolder(View itemView) {
+            super(itemView);
+
+            mView = itemView;
+        }
+
+        public void setCom ( String com ){
+            TextView tvcoment = ( TextView ) mView.findViewById( R.id.tvComentario );
+            tvcoment.setText(com);
+        }
+
+        public void setDireccion ( String dir ){
+            TextView tvDir = ( TextView ) mView.findViewById( R.id.tvDireccion );
+            tvDir.setText( dir );
+
+        }
+
+        public void setDate ( String date ){
+            TextView tvDate = ( TextView ) mView.findViewById( R.id.tvFechaHora );
+            tvDate.setText( date );
+        }
+
+        public void setImage (Context ctx, String imagePath ){
+            ImageView imageView = (ImageView) mView.findViewById( R.id.photo );
+            Picasso.with(ctx).load(imagePath).into(imageView);
+        }
+
     }
 }
 

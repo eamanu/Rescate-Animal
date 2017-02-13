@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -26,7 +27,7 @@ import static android.R.attr.path;
 
 
 /**
- *  Actividad de Denuncia.
+ *  Actividad de com.eamanu.rescateanimal.Denuncia.
  *  Esta actividad permite lanzar una actividad que registra la posicón del animal y saca una foto.
  *  @author eamanu
  *  @version 0.1
@@ -44,16 +45,29 @@ public class DenunciaActivity extends AppCompatActivity{
     /**variable para almacenar la Dirección.*/
     public static String Direccion;
 
+    /**Variable para almacenar la latitud. */
+    public static double Latitude;
+
+    /**Variable para almacenar la longitude.*/
+    public static double Longitude;
+
+    /**Variable para almacenar el nombre del país. */
+    public static String Pais;
+
+    /**Variable para almacenar el nombre de la localidad.*/
+    public static String Provincia;
+
     /**Variable para almacenar la direcion temporal.*/
     private String mCurrentPhotoPath;
-
-    /*TODO: colocar lat lng provincia y país*/
 
     /**Variable para indicar que se devolvió correctamente actividad de la cámara.*/
     private static final int REQUEST_IMAGE_CAPUTRE = 1;
 
     /**Imagen para ser enviada.*/
     private Bitmap imageBitmap;
+
+    /**Uri to image to send*/
+    private static Uri uri;
 
     /**Variable para indicar que se devolvió una imagen de la galera.*/
     private static final int SELECT_FILE = 2;
@@ -98,7 +112,7 @@ public class DenunciaActivity extends AppCompatActivity{
         /** Datos proveniente de la Activiad de posición.*/
         if (requestCode == REQUEST_CODE){
             if (resultCode == RESULT_OK){
-                Toast.makeText(this, data.getStringExtra("Direccion"), Toast.LENGTH_SHORT).show();
+                setDataPosition(data);
                 // TODO: Almacenar direccion latitude longtiude provincia pais
             }
         }
@@ -229,8 +243,11 @@ public class DenunciaActivity extends AppCompatActivity{
             FileOutputStream os = new FileOutputStream(imageFile);
             os.write(byteArrayOutputStream.toByteArray());
 
+            this.uri  = Uri.fromFile(imageFile);
+
             // cierro
             os.close();
+
 
         }catch (IOException e){
             Log.w("ExternalStorage", "Error Writing" + imageFile, e);
@@ -255,6 +272,7 @@ public class DenunciaActivity extends AppCompatActivity{
         if (data != null){
             try{
                 imageBitmap = MediaStore.Images.Media.getBitmap(getApplicationContext().getContentResolver(), data.getData());
+                this.uri = data.getData();
 
             }catch (IOException e){
                 Log.w("FromGallery", "Error reading " +e );
@@ -294,6 +312,28 @@ public class DenunciaActivity extends AppCompatActivity{
             return true; // External storage is available for write
 
         return false;
+    }
+
+    private void setDataPosition ( Intent data ){
+        this.Direccion = data.getStringExtra("Direccion");
+        this.Latitude = data.getDoubleExtra("Latitude", 0.0);
+        this.Longitude = data.getDoubleExtra("Longitude", 0.0);
+        this.Pais = data.getStringExtra("Pais");
+        this.Provincia = data.getStringExtra("Provincia");
+    }
+
+    public void btnNext (View view){
+        Intent intent = new Intent(DenunciaActivity.this, sendDenuncia.class);
+
+        intent.putExtra("Direccion", this.Direccion);
+        intent.putExtra("Latitude", this.Latitude);
+        intent.putExtra("Longitude", this.Longitude);
+        intent.putExtra("Pais", this.Pais);
+        intent.putExtra("Provincia", this.Provincia);
+        //intent.putExtra("Uri", this.uri.toString());
+        intent.setData(this.uri);
+
+        startActivity(intent);
     }
 }
 

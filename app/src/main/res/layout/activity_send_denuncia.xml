@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_send_denuncia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eamanu.rescateanimal.sendDenuncia"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/layoutBtnSiguiente"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_alignParentRight="true"
+                android:text="Enviar"
+                android:id="@+id/btnEnviar"
+                android:onClick="enviarInformacion"
+                android:gravity="end"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@android:drawable/picture_frame"
+                    android:id="@+id/imgViewPhoto"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="30dp"
+                    android:adjustViewBounds="false"
+                    android:scaleType="fitXY"
+                    android:maxHeight="100dp"
+                    android:maxWidth="100dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/imgViewPhoto">
+<!--
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="25dp"
+                        android:text="¿Qué está pasando?"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="50dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"
+                        android:layout_toRightOf="@id/imgViewPhoto"
+                        android:layout_centerVertical="true"/>
+
+ -->                   <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/editTextDescripcion"
+                        android:maxLines="10"
+                        android:hint="Escribe lo que ves..."/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="20dp"/>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Dirección"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/editTextDireccion"
+                    ></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -4,12 +4,12 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_seekbar_track.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_expanded_controller_seekbar_track.xml"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_seekbar_track.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_expanded_controller_seekbar_track.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_pause_large.xml",
@@ -24,12 +24,12 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop_large.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_ic_mini_controller_stop_large.xml"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_mute.xml",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_ic_mini_controller_mute.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_ic_mini_controller_stop_large.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_ic_mini_controller_stop_large.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
@@ -40,12 +40,12 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable/mr_ic_media_route_connecting_dark.xml"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/camera.png",
@@ -92,12 +92,12 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/navigation_empty_icon.xml"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_small_icon.xml",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable/cast_ic_notification_small_icon.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/navigation_empty_icon.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
@@ -140,12 +140,12 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/design_password_eye.xml"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/mr_ic_close_light.xml",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable/mr_ic_close_light.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",

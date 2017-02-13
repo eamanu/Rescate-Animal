@@ -19,10 +19,13 @@
     <user-feature android:name="android.hardware.location.network" />
     <!-- Para acceder a la cámara -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <!-- Usamos la características de la cámra -->
-    <uses-feature android:name="android.hardware.camera2" android:required="false"/>
+    <!-- Usamos la características de la cámara -->
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
     <!-- Para almacenar las imagenes -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
@@ -31,7 +34,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -71,9 +73,7 @@
         <activity
             android:name=".PostionAnimal"
             android:label="@string/title_activity_postion_animal" />
-
-
-
+        <activity android:name=".sendDenuncia"></activity>
     </application>
 
 </manifest>

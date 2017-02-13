@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "704984355256",
+    "firebase_url": "https://rescate-animal-6f37b.firebaseio.com",
+    "project_id": "rescate-animal-6f37b",
+    "storage_bucket": "rescate-animal-6f37b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704984355256:android:1e4d3d5eadc6b23d",
+        "android_client_info": {
+          "package_name": "com.eamanu.rescateanimal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704984355256-9311ohfcprrk8eejnbt6t82s8fs0uf6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIi_dO1SEShIzQmzRsV3O6rO99Ci3ZQSU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

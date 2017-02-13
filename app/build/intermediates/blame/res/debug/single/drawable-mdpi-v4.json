@@ -20,12 +20,12 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-mdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_refresh_white_24.png",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-mdpi-v4/quantum_ic_refresh_white_24.png"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_pause_circle_filled_white_36.png",
@@ -40,24 +40,24 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/res/drawable-mdpi-v4/ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_skip_previous_white_24.png",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/res/drawable-mdpi-v4/quantum_ic_skip_previous_white_24.png"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_closed_caption_white_36.png",

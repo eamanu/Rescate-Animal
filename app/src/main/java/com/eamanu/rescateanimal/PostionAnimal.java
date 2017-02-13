@@ -294,7 +294,7 @@ public class PostionAnimal extends FragmentActivity implements
     public void getGeoLocation (View view) throws IOException {
         hideSoftKeyboard(view); // Una vez que escribo desaparece el teclado
 
-        strDireccion = editTextDireccion.getText().toString();
+        this.strDireccion = editTextDireccion.getText().toString();
 
         if (strDireccion.isEmpty()){
             Toast.makeText(this, "Escribe una dirección por favor", Toast.LENGTH_SHORT).show();
@@ -305,18 +305,17 @@ public class PostionAnimal extends FragmentActivity implements
         // Extraigo la localización
         List<Address> list = gc.getFromLocationName(strDireccion, 1, -29.459814, -66.941286,-29.361477, -66.782517);
         if(list.isEmpty()){
-            Toast.makeText(this, "Escribe una direccinó correcta, por favor", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "No encontramos esa dirección", Toast.LENGTH_LONG).show();
             return;
         }
 
         Address add = list.get(0);
 
-        this.dlatToSend = add.getLatitude();// Extraigo la latitude
-        this.dlngToSend = add.getLongitude(); // Extraigo la Longitud
-
-        this.strProvinca = add.getLocality(); // Extraigo el nombre la provincia
-        this.strPais = add.getCountryName(); // Extraigo el nombre del país
-
+        this.setDataToSend(this.strDireccion,
+                add.getLatitude(),
+                add.getLongitude(),
+                add.getCountryName(),
+                add.getLocality());
 
         /*Muevo la cámara hacia el punto*/
         goToLocation(this.dlatToSend,this.dlngToSend,this.ZOOM_TO_GET_POSITION);
@@ -342,15 +341,46 @@ public class PostionAnimal extends FragmentActivity implements
         .title("Rescate")
         .draggable(true));
     }
-    /*Función para extraer el nombre de la dirección*/
+
+
+    /**
+     * Función para extraer el nombre de la dirección
+     * @param lat latitude.
+     * @param lng Longitude
+     *
+     */
     public void giveNameLocation ( double lat, double lng) throws IOException {
         Geocoder gc = new Geocoder(this);
-        List <Address> list = gc.getFromLocation(lat, lng,1);
+
+        List <Address> list = gc.getFromLocation(lat, lng, 1);
         Address add = list.get(0);
 
-        strDireccion = add.getAddressLine(0);
+        // set the data to send
+        this.setDataToSend(add.getAddressLine(0),
+                lat,
+                lng,
+                add.getCountryName(),
+                add.getLocality());
 
-        editTextDireccion.setText(strDireccion);
+        editTextDireccion.setText(add.getAddressLine(0));
+
     }
+
+    /**
+     * Funcion para armar lo datos para enviar a la actividad de la denuncia
+     * @param dir Direccion
+     * @param lat latitude
+     * @param lng longitude
+     * @param pais country
+     * @param provincia locality
+     */
+    private void setDataToSend ( String dir, double lat, double lng, String pais, String provincia){
+        this.strDireccion = dir;
+        this.dlatToSend = lat;
+        this.dlngToSend = lng;
+        this.strPais = pais;
+        this.strProvinca = provincia;
+    }
+
 
 }
