@@ -1,11 +1,17 @@
 package com.eamanu.rescateanimal;
 
 import android.*;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.preference.DialogPreference;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -22,6 +28,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -108,16 +116,29 @@ public class PostionAnimal extends FragmentActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_postion_animal);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        SupportMapFragment mapFragment = ( SupportMapFragment ) getSupportFragmentManager()
+                .findFragmentById( R.id.map );
+        mapFragment.getMapAsync( this );
 
-        editTextDireccion = (EditText) findViewById(R.id.textDireccion); //traigo la dirección
+        editTextDireccion = ( EditText ) findViewById( R.id.textDireccion ); //traigo la dirección
 
         /*declaro el boton de ok para el envío de datos a la activity anterior*/
-        btnOK = (Button) findViewById(R.id.OkPosicion);
+        btnOK = ( Button ) findViewById ( R.id.OkPosicion );
         /*declaro el boton de back para cancelar la operación y no se guarde ningún dato. */
-        btnBack = (Button)findViewById(R.id.BtnBack);
+        btnBack = ( Button )findViewById( R.id.BtnBack );
+
+        if ( ! isConnectionInternet( ) ){
+            AlertDialog.Builder builder = new AlertDialog.Builder( PostionAnimal.this );
+            builder.setTitle( "Imposible conectarse a Internet" );
+            builder.setMessage( "Es necesario conectarse a Internet. Por favor checkear la conección");
+            builder.setPositiveButton( "OK", new DialogInterface.OnClickListener ( ){
+                @Override
+                public void onClick( DialogInterface dialog, int which ) {
+                    // TODO: ver que onda.
+                }
+            });
+            builder.show( );
+        }
 
         /*Listener del ok*/
         btnOK.setOnClickListener(new View.OnClickListener() {
@@ -290,7 +311,12 @@ public class PostionAnimal extends FragmentActivity implements
 
 //    }
 
-
+    /**
+     * Get the location
+     *
+     * @param view
+     * @throws IOException
+     */
     public void getGeoLocation (View view) throws IOException {
         hideSoftKeyboard(view); // Una vez que escribo desaparece el teclado
 
@@ -321,28 +347,43 @@ public class PostionAnimal extends FragmentActivity implements
         goToLocation(this.dlatToSend,this.dlngToSend,this.ZOOM_TO_GET_POSITION);
 
     }
-    /*Oculto el teclado*/
+
+    /**
+     * Oculto el teclado
+     * @param view
+     */
     public void hideSoftKeyboard (View view){
         InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(),0);
     }
-    // Muevo la cámara hacia el punto de interes
+
+    /**
+     * Muevo la cámara hacia el punto de interes
+     * @param lat
+     * @param lng
+     * @param zoom
+     */
     public void goToLocation ( double lat, double lng, float zoom){
         LatLng ll = new LatLng(lat,lng);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ll, zoom));
         putMarker(lat, lng);// pongo un marcador
     }
-    // Pongo el marcador
+
+    /**
+     * Put the marker
+     * @param lat
+     * @param lng
+     */
     public void putMarker ( double lat, double lng){
 
         mMap.clear();//Limpio los otros marcadores
         mMap.addMarker(new MarkerOptions()
         .position(new LatLng(lat,lng))
         .title("Rescate")
+        .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_maps_chiquita))
+        .anchor(0.0f, 1.0f)
         .draggable(true));
     }
-
-
     /**
      * Función para extraer el nombre de la dirección
      * @param lat latitude.
@@ -363,7 +404,6 @@ public class PostionAnimal extends FragmentActivity implements
                 add.getLocality());
 
         editTextDireccion.setText(add.getAddressLine(0));
-
     }
 
     /**
@@ -382,5 +422,15 @@ public class PostionAnimal extends FragmentActivity implements
         this.strProvinca = provincia;
     }
 
+    /**
+     * check if internet is connected
+     * @return true if connected
+     */
+    private boolean isConnectionInternet ( ){
+        ConnectivityManager connectivityManager  = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isConnectedOrConnecting();
+
+    }
 
 }

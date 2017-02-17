@@ -7,30 +7,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:orientation="vertical">
-        
-        <RelativeLayout
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:layout_width="80dp"
-                android:layout_height="50dp"
-                android:id="@+id/BtnBack"
-                android:text="Back"
-                android:background="@android:color/transparent"
-                android:layout_alignParentLeft="true"/>
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/OkPosicion"
-                android:text="OK"
-                android:background="@android:color/transparent"
-                android:layout_alignParentRight="true" />
-        </RelativeLayout>
-    </LinearLayout>
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000818"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/BtnBack"
+                    android:text="Back"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/OkPosicion"
+                    android:text="OK"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -49,23 +63,32 @@
             android:layout_height="45dp"
             android:orientation="horizontal"
             android:visibility="visible"
+            android:layout_margin="7dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:background="#DFE0E2">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <EditText
-                    android:layout_width="200dp"
+                    android:layout_width="match_parent"
                     android:layout_height="45dp"
+                    android:layout_marginRight="45dp"
                     android:id="@+id/textDireccion"
-                    android:hint="Escribe la dirección"/>
+                    android:hint="Escribe la dirección"
+                    android:ellipsize="end"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"
+                    android:padding="10dp"/>
                 <Button
-                    android:layout_width="100dp"
                     android:layout_height="45dp"
                     android:id="@+id/Buscar"
-                    android:text="Buscar"
                     android:layout_alignParentRight="true"
-                    android:onClick="getGeoLocation" />
+                    android:onClick="getGeoLocation"
+                    android:background="@android:drawable/ic_search_category_default"
+                    android:layout_width="45dp"
+                    android:layout_marginRight="15dp"/>
 
             </RelativeLayout>
 

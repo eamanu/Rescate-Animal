@@ -20,12 +20,12 @@
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_spinner.xml"
-    },
-    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_spinner.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",

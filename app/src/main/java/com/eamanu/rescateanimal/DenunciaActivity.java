@@ -6,11 +6,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -24,7 +27,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static android.R.attr.path;
-
 
 /**
  *  Actividad de com.eamanu.rescateanimal.Denuncia.
@@ -75,6 +77,12 @@ public class DenunciaActivity extends AppCompatActivity{
     /**Variable para almacenar la selección del usuario (camara o galeria).*/
     private String userChoise;
 
+    /**Variable para conocer si se seleccionó una imagen*/
+    private boolean isPhoto = false;
+
+    /**Variable para conocer si se seleccionó un lugar en el mapa*/
+    private boolean isDirection = false;
+
     /**
      *  Crea la actividad.
      *  @param savedInstanceState
@@ -83,6 +91,9 @@ public class DenunciaActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_denuncia);
+
+        GetPicture = ( Button ) findViewById( R.id.BtnCamera );
+        GetPositionMapButton = ( Button ) findViewById( R.id.BtnMap );
     }
 
     /**
@@ -108,6 +119,7 @@ public class DenunciaActivity extends AppCompatActivity{
      * @param resultCode
      * @param data
      */
+
     protected  void onActivityResult (int requestCode, int resultCode, Intent data){
         /** Datos proveniente de la Activiad de posición.*/
         if (requestCode == REQUEST_CODE){
@@ -120,6 +132,7 @@ public class DenunciaActivity extends AppCompatActivity{
         if ( requestCode == REQUEST_IMAGE_CAPUTRE ) {
             if (resultCode == RESULT_OK){
                 captureImageFromCamera ( data );
+                this.changePhotoSrc(this.GetPicture);
                 /*TODO: aquí debería guardar la foto para enviarla a firebase*/
             }
         }
@@ -128,6 +141,7 @@ public class DenunciaActivity extends AppCompatActivity{
         if (requestCode == SELECT_FILE ){
             if ( resultCode == RESULT_OK){
                 SelectImageFromGallery ( data ) ;
+                this.changePhotoSrc(this.GetPicture);
                 /*TODO: Aquí debería guardar la foto para enviarla al firebase*/
             }
         }
@@ -323,6 +337,9 @@ public class DenunciaActivity extends AppCompatActivity{
     }
 
     public void btnNext (View view){
+
+        // check if the photo and address is right
+        if (isPhoto && isDirection){
         Intent intent = new Intent(DenunciaActivity.this, sendDenuncia.class);
 
         intent.putExtra("Direccion", this.Direccion);
@@ -334,6 +351,18 @@ public class DenunciaActivity extends AppCompatActivity{
         intent.setData(this.uri);
 
         startActivity(intent);
+        } else{
+            Toast.makeText(this, "Por favor, agregar foto y la posición del animalito", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void changePhotoSrc (Button butPhoto){
+        if (this.isPhoto == false){
+            this.isPhoto = true;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                butPhoto.setBackgroundResource(R.drawable.ic_camera_blue);
+            }
+        }
     }
 }
 

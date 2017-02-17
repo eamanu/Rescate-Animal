@@ -6,40 +6,47 @@
     android:id="@+id/Denuncia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#DFE0E2">
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:orientation="horizontal"
-        android:id="@+id/layoutBtnSiguiente">
-        
-        <RelativeLayout
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000818"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
 
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:layout_alignParentRight="true"
-                android:text="Siguiente"
-                android:id="@+id/btnSiguiente"
-                android:onClick="btnNext"
-                android:gravity="end"
-                android:textAlignment="textEnd"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:textSize="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:text="Siguiente"
+                    android:id="@+id/btnSiguiente"
+                    android:onClick="btnNext"
+                    android:gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
 
-        </RelativeLayout>
-
-    </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_below="@+id/layoutBtnSiguiente"
+        android:layout_below="@+id/bar"
         android:id="@+id/LayoutTextMotivation">
         <TextView
             android:layout_width="match_parent"
@@ -60,22 +67,22 @@
             android:layout_height="200dp">
 
             <Button
-                android:layout_width="150dp"
-                android:layout_height="150dp"
                 android:id="@+id/BtnCamera"
                 android:layout_alignParentRight="true"
                 android:layout_margin="15dp"
-                android:text="Camera"
-                android:onClick="getPicture"/><!--Cambiar-->
+                android:onClick="getPicture"
+                android:background="@drawable/ic_camera"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/><!--Cambiar-->
 
             <Button
-                android:layout_width="150dp"
-                android:layout_height="150dp"
                 android:id="@+id/BtnMap"
                 android:layout_alignParentLeft="true"
                 android:layout_margin="15dp"
-                android:text="Map"
-                android:onClick="getPositionAnimal"/><!--Cambiar-->
+                android:onClick="getPositionAnimal"
+                android:background="@drawable/ic_google_maps"
+                android:layout_width="80dp"
+                android:layout_height="80dp" /><!--Cambiar-->
         </RelativeLayout>
     </LinearLayout>
 
