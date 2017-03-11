@@ -17,4 +17,19 @@
     </string>
     <string name="title_activity_denuncia">Pide Rescate</string>
     <string name="title_activity_postion_animal">Posicion del Animal</string>
+
+    <string name="title_activity_view_denuncia">ViewDenuncia</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="comentario">Comentario</string>
+    <string name="direccion">Direccion</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">1732954880066901</string>
+    <string name="title_activity_user_information">UserInformationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

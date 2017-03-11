@@ -7,8 +7,10 @@ import com.google.firebase.database.IgnoreExtraProperties;
  */
 
 @IgnoreExtraProperties
+@SuppressWarnings("serial")
 public class Denuncia {
     private String Userid;
+    private String id;
     private String Timestamp;
     private String Comentario;
     private double Latitude;
@@ -17,6 +19,50 @@ public class Denuncia {
     private String Provincia;
     private String Direccion;
     private String pathPhoto;
+    private String pathThumbail;
+
+    /**
+     *Estados.
+     *
+     * 0 ->  Denuncia Activa.
+     * 1 -> Denuncia Cancelada / Animal Rescatado.
+     */
+
+    private int Estado;
+
+    public String getPathThumbail() {
+        return pathThumbail;
+    }
+
+    public void setPathThumbail(String pathThumbail) {
+        this.pathThumbail = pathThumbail;
+    }
+
+    public int getEstado() {
+        return Estado;
+    }
+
+    public void setEstado(int estado) {
+        Estado = estado;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public int getIsRescatado() {
+        return isRescatado;
+    }
+
+    public void setIsRescatado(int isRescatado) {
+        this.isRescatado = isRescatado;
+    }
+
+    private int isRescatado;
 
     public void setUserid(String userid) {
         Userid = userid;
@@ -54,7 +100,6 @@ public class Denuncia {
         this.pathPhoto = pathPhoto;
     }
 
-
     public String getUserid() {
         return Userid;
     }
@@ -91,7 +136,6 @@ public class Denuncia {
         return pathPhoto;
     }
 
-
     /**
      * Default constructor
      */
@@ -114,7 +158,7 @@ public class Denuncia {
     public Denuncia ( String userid, String timestamp,
                       String comentario, double lat,
                       double lng, String pais,
-                      String provincia, String direccion, String pathToPhoto){
+                      String provincia, String direccion, String pathToPhoto, String pathToThumbail){
 
 
         this.Userid = userid;
@@ -126,5 +170,7 @@ public class Denuncia {
         this.Provincia = provincia;
         this.Direccion = direccion;
         this.pathPhoto = pathToPhoto;
+        this.pathThumbail = pathToThumbail;
+        this.Estado = 0;
     }
 }

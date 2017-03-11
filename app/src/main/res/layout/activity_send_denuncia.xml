@@ -7,33 +7,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.eamanu.rescateanimal.sendDenuncia"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#DFE0E2">
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:orientation="horizontal"
-        android:id="@+id/layoutBtnSiguiente"
-        >
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <RelativeLayout
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:layout_alignParentRight="true"
-                android:text="Enviar"
-                android:id="@+id/btnEnviar"
-                android:onClick="enviarInformacion"
-                android:gravity="end"
-                android:textAlignment="textEnd"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-    </LinearLayout>
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000818"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:id="@+id/btnEnviar"
+                    android:onClick="enviarInformacion"
+                    android:gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -42,7 +53,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -83,12 +95,17 @@
                         android:layout_toRightOf="@id/imgViewPhoto"
                         android:layout_centerVertical="true"/>
 
- -->                   <EditText
+-->                   <EditText
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:id="@+id/editTextDescripcion"
                         android:maxLines="10"
-                        android:hint="Escribe lo que ves..."/>
+                        android:textSize="15sp"
+                        android:hint="Escribe lo que ves..."
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
 
                 </LinearLayout>
 
@@ -112,25 +129,40 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:textColor="@android:color/black"
-                android:textSize="15dp"/>
+                android:textSize="15sp"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@android:color/darker_gray"
-                android:layout_margin="40dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_margin="30dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:id="@+id/editTextDireccion"
-                    ></TextView>
+                    android:layout_height="25dp"
+                    android:textSize="15sp"
+                    android:id="@+id/editTextDireccion"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMensajeEnviar"
+                    android:textSize="24sp"/>
 
             </LinearLayout>
         </LinearLayout>

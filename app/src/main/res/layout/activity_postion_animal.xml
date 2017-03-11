@@ -25,21 +25,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <Button
-                    android:layout_width="80dp"
+                    android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:id="@+id/BtnBack"
-                    android:text="Back"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/ic_keyboard_backspace"
                     android:layout_alignParentLeft="true"
                     android:textSize="20sp"/>
                 <Button
-                    android:layout_width="50dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:id="@+id/OkPosicion"
-                    android:text="OK"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/selector"
                     android:layout_alignParentRight="true"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"/>
             </RelativeLayout>
         </android.support.v7.widget.Toolbar>
 

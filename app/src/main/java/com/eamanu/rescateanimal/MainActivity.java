@@ -1,33 +1,40 @@
 package com.eamanu.rescateanimal;
 
-import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.TextView;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.squareup.picasso.Picasso;
+import com.facebook.Profile;
+import com.facebook.login.widget.ProfilePictureView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
 
-    /**RecyclerView lista de denuncias.*/
-    private RecyclerView recyclerView;
 
-    /**Referencia a la base de datos*/
-    private DatabaseReference mDatabase;
+public class MainActivity extends BaseActivity implements DenunciaViewFragment.OnPostSelectedListener, HeaderNavView.onDataHeaderNavView{
+    /**TAG.*/
+    private static final String TAG = "MAINACTIVITY";
+
+    /**TAG for DenunciaViewFragment indentification*/
+    private static final String TAG_TASK_FRAGMENT= "DenunciaViewFragment";
+
+    /**TAG for HeaderNavView Fragment indentification.*/
+    private static final String TAG_TASK_HEADER_NAV_VIEW = "HeaderNavView";
+
+    /**font.*/
+    private Typeface font;
+
+
+
+    /**Image view for photo user*/
+    private ProfilePictureView ivPhotoUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,28 +43,54 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // create the recycler view
-        recyclerView = (RecyclerView) findViewById(R.id.denuncias_list);
-        recyclerView.setHasFixedSize(true);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        layoutManager.setReverseLayout(true);
-        layoutManager.setStackFromEnd(true);
-        recyclerView.setLayoutManager(layoutManager);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
 
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("Denuncias");
+        // picture of profile user
+        ivPhotoUser = (ProfilePictureView) findViewById(R.id.PhotoUser);
 
-        /*
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+        if (user == null)
+            goToLoginActivity();
+        else{
+            // Manager de fragmento
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            // Creo el objeto fragmento
+            DenunciaViewFragment denunciaViewFragment =  (DenunciaViewFragment) fragmentManager.findFragmentByTag(TAG_TASK_FRAGMENT);
+
+            //Creo el fragmento y lo asigno y ejecuto
+            if ( denunciaViewFragment == null){
+                denunciaViewFragment = new DenunciaViewFragment();
+                //add the fragment
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                // Asigno el contenedor al fragmento
+                fragmentTransaction.add(R.id.content_main,denunciaViewFragment);
+                // envío
+                fragmentTransaction.commit();
             }
-        });*/
+            // set userData
+            setUserData();
+        }
+    }
 
+    private void setUserData() {
+        //manager de fragment
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        // creo el objeto fragmento
+        HeaderNavView headerNavView = (HeaderNavView) fragmentManager.findFragmentByTag(TAG_TASK_HEADER_NAV_VIEW);
 
+        //creo el fragmento y lo asigno y ejecuto
+        if( headerNavView == null){
+            headerNavView = new HeaderNavView();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.add(R.id.navview, headerNavView);
+            fragmentTransaction.commit();
+        }
+    }
+
+    private void goToLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     /**
@@ -68,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -84,9 +116,11 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                goToLoginActivity();
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -104,57 +138,35 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart ( ){
+    protected void onStart() {
         super.onStart();
-
-        FirebaseRecyclerAdapter<Denuncia, DenunciaViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Denuncia, DenunciaViewHolder>(
-                Denuncia.class,
-                R.layout.denuncia_row,
-                DenunciaViewHolder.class,
-                mDatabase
-        ) {
-            @Override
-            protected void populateViewHolder(DenunciaViewHolder viewHolder, Denuncia model, int position) {
-                viewHolder.setCom(model.getComentario());
-                viewHolder.setDireccion(model.getDireccion());
-                viewHolder.setDate(model.getTimestamp());
-                //viewHolder.setImage(getApplicationContext(), model.getPathPhoto());
-            }
-        };
-
-        recyclerView.setAdapter(firebaseRecyclerAdapter);
     }
 
+    @Override
+    public void onDataDownloading(Boolean isDataDownload) {
+        if  (isDataDownload)
+            showProgressDialog( "Descargando información ");
+        else
+            dismissProgressDialog();
+    }
 
-    public static class DenunciaViewHolder extends RecyclerView.ViewHolder{
+    @Override
+    public void setData(TextView nameUser, ProfilePictureView picture, TextView emailUser, TextView cantidadDenuncias, TextView cantidadRescates) {
+        Profile profile = Profile.getCurrentProfile();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-        View mView;
-        public DenunciaViewHolder(View itemView) {
-            super(itemView);
-
-            mView = itemView;
-        }
-
-        public void setCom ( String com ){
-            TextView tvcoment = ( TextView ) mView.findViewById( R.id.tvComentario );
-            tvcoment.setText(com);
-        }
-
-        public void setDireccion ( String dir ){
-            TextView tvDir = ( TextView ) mView.findViewById( R.id.tvDireccion );
-            tvDir.setText( dir );
-
-        }
-
-        public void setDate ( String date ){
-            TextView tvDate = ( TextView ) mView.findViewById( R.id.tvFechaHora );
-            tvDate.setText( date );
-        }
-
-        public void setImage (Context ctx, String imagePath ){
-            ImageView imageView = (ImageView) mView.findViewById( R.id.photo );
-            Picasso.with(ctx).load(imagePath).into(imageView);
-        }
+        // Name user
+        nameUser.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Medium.ttf"));
+        nameUser.setText(profile.getName());
+        //Email user
+        emailUser.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Regular.ttf"));
+        emailUser.setText(user.getEmail());
+        //Picture user
+        picture.setProfileId(profile.getId());
+        // Denuncias cant
+        cantidadDenuncias.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Medium.ttf"));
+        // Rescates cant
+        cantidadRescates.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Medium.ttf"));
 
     }
 }

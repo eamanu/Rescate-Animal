@@ -33,7 +33,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <!-- Include required permissions for Google Mobile Ads to run -->
+    <!-- Permission for internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
@@ -68,7 +68,7 @@
         </activity>
         <activity
             android:name="com.eamanu.rescateanimal.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="Rescate Animal" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -83,6 +83,7 @@
 
         <activity
             android:name="com.eamanu.rescateanimal.DenunciaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_denuncia" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -91,11 +92,15 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <activity
             android:name="com.eamanu.rescateanimal.PostionAnimal"
             android:label="@string/title_activity_postion_animal" />
         <activity android:name="com.eamanu.rescateanimal.sendDenuncia" />
+        <activity android:name="com.eamanu.rescateanimal.ViewDenuncia" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -164,6 +169,24 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.eamanu.rescateanimal.FacebookInitProvider"
+            android:exported="false" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

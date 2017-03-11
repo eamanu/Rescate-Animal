@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DenunciaViewFragment"
+    android:id="@+id/container">
+    <!--
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.eamanu.rescateanimal.DenunciaViewFragment"
+        android:id="@+id/fragmentDenuncias">
+
+    </fragment>
+        -->
+    
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/denuncias_list">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/goodNews"
+        android:visibility="invisible">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/textViewGoodNews"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+

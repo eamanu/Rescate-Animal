@@ -28,9 +28,8 @@
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/selector"
                     android:layout_alignParentRight="true"
-                    android:text="Siguiente"
                     android:id="@+id/btnSiguiente"
                     android:onClick="btnNext"
                     android:gravity="end"
@@ -49,10 +48,12 @@
         android:layout_below="@+id/bar"
         android:id="@+id/LayoutTextMotivation">
         <TextView
+            android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Aqui pondría alguna frase motivadora. También algunass fotos.
-                Hay que ver que se puede poner."/>
+            android:id="@+id/tvFrases"
+            android:textSize="25sp"
+            android:text=""/>
 
     </LinearLayout>
 
@@ -60,29 +61,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/LayoutTextMotivation"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_centerHorizontal="true">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp">
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/BtnCamera"
                 android:layout_alignParentRight="true"
-                android:layout_margin="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
                 android:onClick="getPicture"
                 android:background="@drawable/ic_camera"
                 android:layout_width="80dp"
-                android:layout_height="80dp"/><!--Cambiar-->
+                android:layout_height="80dp"/>
 
             <Button
                 android:id="@+id/BtnMap"
                 android:layout_alignParentLeft="true"
-                android:layout_margin="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
                 android:onClick="getPositionAnimal"
                 android:background="@drawable/ic_google_maps"
                 android:layout_width="80dp"
-                android:layout_height="80dp" /><!--Cambiar-->
+                android:layout_height="80dp" />
+
         </RelativeLayout>
     </LinearLayout>
 

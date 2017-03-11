@@ -1,5 +1,6 @@
 package com.eamanu.rescateanimal;
 
+import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,7 +10,10 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.Manifest;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Created by eamanu on 2/1/17.
@@ -51,6 +55,16 @@ public class utils  {
                 return false; // Devuelve falso y se genera un alertdialog para adquirir permiso
             }else return true;  // Devuelve true si lo permisos ya están dados
         }else return true; // Devuelve true si la version es menor que M, ya que no se permite dar permisos en tiempo real
+    }
+
+    public static String setTimeStampToNameFile ( ){
+        return new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+    }
+
+    public static String getTimeStampFromNameFile ( String TimeStap) throws ParseException {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        Date dt = simpleDateFormat.parse(TimeStap);
+        return new SimpleDateFormat("dd-MM-yyyy HH:mm").format(dt);
     }
 }
 

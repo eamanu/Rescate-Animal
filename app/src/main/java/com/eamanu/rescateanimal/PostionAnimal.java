@@ -1,34 +1,31 @@
 package com.eamanu.rescateanimal;
 
-import android.*;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.preference.DialogPreference;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -124,6 +121,9 @@ public class PostionAnimal extends FragmentActivity implements
 
         /*declaro el boton de ok para el envío de datos a la activity anterior*/
         btnOK = ( Button ) findViewById ( R.id.OkPosicion );
+        btnOK.setText("Listo");
+        btnOK.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Regular.ttf"));
+
         /*declaro el boton de back para cancelar la operación y no se guarde ningún dato. */
         btnBack = ( Button )findViewById( R.id.BtnBack );
 
@@ -182,8 +182,10 @@ public class PostionAnimal extends FragmentActivity implements
     public void onMapReady(GoogleMap googleMap){
 
         mMap = googleMap;
+        //mMap.setPadding(0,0,30,105);
+        //LatLng LR_LatLng = new LatLng(-29.4142924, -66.8907967);
+        LatLng LR_LatLng = new LatLng(-29.4153391, -66.8612709);
 
-        LatLng LR_LatLng = new LatLng(-29.4142924, -66.8907967);
         /*
         *   Muevo la camara a la Rioja
         */
@@ -211,15 +213,17 @@ public class PostionAnimal extends FragmentActivity implements
     }
 
     /*Permite que active la capa "myLocation" si tengo los permisos*/
+    /*
     private void enabledMyLocation() {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            mMap.setMyLocationEnabled(true); //Activo la capa "mylocation"
+            mMap.setMyLocationEnabled(true);//Activo la capa "mylocation"
+
         } else {
             //Pido permiso. Esto llama a public void onRequestPermissionsResult()
             ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     MY_LOCATION_REQUEST_CODE);
         }
-    }
+    }*/
 
 //    /*Creo el API client Google*/
 //    private synchronized void createApiClientGoogle() {

@@ -27,6 +27,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <!-- Permission for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
@@ -46,7 +49,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="Rescate Animal"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -61,6 +64,7 @@
 
         <activity
             android:name=".DenunciaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_denuncia" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -69,11 +73,15 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <activity
             android:name=".PostionAnimal"
             android:label="@string/title_activity_postion_animal" />
-        <activity android:name=".sendDenuncia"></activity>
+        <activity android:name=".sendDenuncia" />
+        <activity android:name=".ViewDenuncia" />
     </application>
 
 </manifest>

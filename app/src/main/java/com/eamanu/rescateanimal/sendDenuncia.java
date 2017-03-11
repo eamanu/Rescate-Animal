@@ -1,45 +1,41 @@
 package com.eamanu.rescateanimal;
 
-import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.graphics.Typeface;
 import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
-import com.google.firebase.storage.UploadTask;
 
-import java.io.File;
+import java.io.BufferedInputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.io.InputStream;
 
-public class sendDenuncia extends AppCompatActivity {
+public class sendDenuncia extends BaseActivity implements NewDenunciaUploadTaskFragment.TaskCallbacks {
 
     /**variable para almacenar la Dirección.*/
     private  String Direccion;
@@ -58,6 +54,9 @@ public class sendDenuncia extends AppCompatActivity {
 
     /**Imagen para ser enviada.*/
     private Bitmap imageBitmap;
+
+    /**Imagen pequeña*/
+    private Bitmap mThumbnail;
 
     /**Uri to image to send*/
     private  Uri uri;
@@ -85,6 +84,21 @@ public class sendDenuncia extends AppCompatActivity {
 
     private static final String userid = "eamanu";
 
+    private NewDenunciaUploadTaskFragment mTaskFragment;
+
+    public static final String TAG_TASK_FRAGMENT = "newPostUploadTaskFragment";
+
+    private static final int THUMBNAIL_MAX_DIMENSION = 640;
+
+    private static final int FULL_SIZE_MAX_DIMENSION = 1280;
+
+    private static final String TAG = "sendDenuncia";
+
+    /**Button enviar.*/
+    private Button btnEnviar;
+
+    /**Mensaje final.*/
+    private TextView mensajeFinal;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -108,24 +122,45 @@ public class sendDenuncia extends AppCompatActivity {
 
         receiveData();
 
+        FragmentManager fm = getSupportFragmentManager();
+
+        mTaskFragment = (NewDenunciaUploadTaskFragment) fm.findFragmentByTag(TAG_TASK_FRAGMENT);
+
+        if(mTaskFragment == null){
+            mTaskFragment = new NewDenunciaUploadTaskFragment();
+            fm.beginTransaction().add(mTaskFragment, TAG_TASK_FRAGMENT).commit();
+        }
+
+        //seteo la foto
         try {
-            // seteo la foto
-            imageBitmap = MediaStore.Images.Media.getBitmap(getApplicationContext().getContentResolver(),this.uri);
-            imageBitmap = this.getRightAngleImage(this.uri);
-            photo.setImageBitmap(imageBitmap);
+            imageBitmap = decodeSampledBitmapFromUri(this.uri, FULL_SIZE_MAX_DIMENSION,FULL_SIZE_MAX_DIMENSION);
+            imageBitmap = this.getRightAngleImageBitmap(this.uri);
+
+            mThumbnail = decodeSampledBitmapFromUri(this.uri, THUMBNAIL_MAX_DIMENSION, THUMBNAIL_MAX_DIMENSION);
+            mThumbnail = this.getRightAngleImageThunm(this.uri);
+            photo.setImageBitmap(mThumbnail);
 
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.e(TAG, "Error:" + e.getMessage() );
         }
 
         // seteo direccion
         textDireccion.setText( this.Direccion );
+
+        // btn Enviar
+        btnEnviar = (Button) findViewById(R.id.btnEnviar);
+        btnEnviar.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Medium.ttf"));
+        btnEnviar.setText("Enviar");
+
+        // Mensaje final
+        mensajeFinal = ( TextView ) findViewById(R.id.tvMensajeEnviar);
+        mensajeFinal.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Regular.ttf"));
+        mensajeFinal.setText("Recuerda que realizar una denuncia representa una gran responsabilidad. Por favor, sé reponsable con tus publicaciones. Gracias.");
     }
 
     /**
      * Recive los datos de la actividad anterior.
      */
-
     private void receiveData ( ){
         Intent i = this.getIntent();
         this.Direccion = i.getStringExtra("Direccion");
@@ -138,42 +173,14 @@ public class sendDenuncia extends AppCompatActivity {
 
     }
 
-    public void enviarInformacion ( View view ){
+    public void enviarInformacion (View view ) {
 
+        showProgressDialog("Se está mandando el pedido de rescate!!!");
 
-        tStamp= new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        mTaskFragment.upLoadData(imageBitmap, mThumbnail, userid, this.editComentario.getText().toString(), this.Latitude, this.Longitude,
+                this.Pais, this.Provincia, this.Direccion);
 
-        progress.setMessage("Subiendo información ...");
-        progress.show();
-
-        // Subier datos a FirebaseStorage
-        StorageReference filepath = mStorage.child("Photos").child(userid + "_" + tStamp);
-        filepath.putFile(this.uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                // traigo la URL de descarga de la imagen
-                Uri downloadUrl = taskSnapshot.getDownloadUrl();
-                // creo el objeto denuncia
-                Denuncia denuncia = new Denuncia(userid, tStamp, editComentario.getText().toString(),
-                        Latitude,Longitude, Pais,
-                        Provincia, Direccion, downloadUrl.toString());
-
-                // Hago un push para obtener un id
-                DatabaseReference newDenuncia = databaseReference.push();
-                // set datas
-                newDenuncia.setValue(denuncia);
-
-                progress.dismiss();
-                startActivity(new Intent(sendDenuncia.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                progress.dismiss();
-                Toast.makeText(sendDenuncia.this, "No se pudo enviar la información, vuelve a intentar", Toast.LENGTH_SHORT).show();
-            }
-        });
+        //startActivity(new Intent(sendDenuncia.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
     }
 
     /**
@@ -183,7 +190,7 @@ public class sendDenuncia extends AppCompatActivity {
      * @return
      */
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    private Bitmap getRightAngleImage (final Uri imageUri ){
+    private Bitmap getRightAngleImageBitmap (final Uri imageUri ){
         try {
             String path = getPath(this.getApplicationContext(), imageUri);
             ExifInterface ei = new ExifInterface(path);
@@ -217,6 +224,46 @@ public class sendDenuncia extends AppCompatActivity {
     }
 
     /**
+     * Function that give the correct angle.
+     *
+     * @param imageUri
+     * @return
+     */
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+    private Bitmap getRightAngleImageThunm (final Uri imageUri ){
+        try {
+            String path = getPath(this.getApplicationContext(), imageUri);
+            ExifInterface ei = new ExifInterface(path);
+
+            int orientation = ei.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_UNDEFINED);
+
+            switch (orientation){
+                case ExifInterface.ORIENTATION_ROTATE_90:
+                    return rotateImage(this.mThumbnail, 90);
+
+                case ExifInterface.ORIENTATION_ROTATE_180:
+                    return rotateImage(this.mThumbnail, 180);
+
+                case ExifInterface.ORIENTATION_ROTATE_270:
+                    return rotateImage(this.mThumbnail, 270);
+
+                case ExifInterface.ORIENTATION_FLIP_VERTICAL:
+                    return rotateImage(this.mThumbnail,90);
+
+                case ExifInterface.ORIENTATION_NORMAL:
+
+                default:
+                    break;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.e("RIGTHANGLE", e.getMessage());
+        }
+
+        return rotateImage(this.mThumbnail, 0);
+    }
+
+    /**
      * Function to rotate image
      *
      * @param bit
@@ -224,7 +271,6 @@ public class sendDenuncia extends AppCompatActivity {
      * @return
      */
     public Bitmap rotateImage ( Bitmap bit, float angle){
-        Toast.makeText(sendDenuncia.this, Float.toString(angle), Toast.LENGTH_SHORT).show();
         Matrix matrix = new Matrix();
         matrix.postRotate(angle);
         return Bitmap.createBitmap(bit, 0, 0, bit.getWidth(), bit.getHeight(), matrix, true);
@@ -357,6 +403,97 @@ public class sendDenuncia extends AppCompatActivity {
     public static boolean isMediaDocument(Uri uri) {
         return "com.android.providers.media.documents".equals(uri.getAuthority());
     }
+
+
+    @Override
+    public void onBitmapResized(Bitmap resizedBitmap, int mMaxDimension) {
+
+        if (resizedBitmap == null){
+            Log.e(TAG, "No se pudo redimensionar la imagen en la tarea de background: ");
+            Toast.makeText(this, "Error con la imagen", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if( mMaxDimension == FULL_SIZE_MAX_DIMENSION){
+            imageBitmap = resizedBitmap;
+            //imageBitmap = scalePic();
+           // imageBitmap = this.getRightAngleImage(this.uri);
+            photo.setImageBitmap(imageBitmap);
+
+        }
+        if(mMaxDimension == THUMBNAIL_MAX_DIMENSION){
+            mThumbnail = resizedBitmap;
+        }
+    }
+
+    @Override
+    public void onPostUpload(final String error) {
+        sendDenuncia.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (error == null) {
+                    //Toast.makeText(sendDenuncia.this, "Se envió el pedido de rescate!", Toast.LENGTH_SHORT).show();
+                    dismissProgressDialog();
+                    startActivity(new Intent(sendDenuncia.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+
+                } else {
+                    Toast.makeText(sendDenuncia.this, error, Toast.LENGTH_SHORT).show();
+                    dismissProgressDialog();
+                }
+            }
+        });
+    }
+
+    /**
+     * Calcula cuanto hay que redimensionar.
+     * @param options
+     * @param reqWidth
+     * @param reqHeight
+     * @return int
+     */
+    public static int calculateInSampleSize ( BitmapFactory.Options options, int reqWidth, int reqHeight){
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || width > reqWidth ){
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
+
+            while ( ( halfHeight / inSampleSize ) > reqHeight
+                    && ( halfWidth / inSampleSize) > reqWidth ){
+                inSampleSize *= 2;
+            }
+
+        }
+
+        return inSampleSize;
+    }
+
+    /**
+     * Redimensiona la imagen.
+     *
+     * @param fileUri
+     * @param reqWidth
+     * @param reqHeight
+     * @return Bitmap
+     * @throws IOException
+     */
+    public Bitmap decodeSampledBitmapFromUri(Uri fileUri, int reqWidth, int reqHeight) throws IOException {
+        InputStream stream = new BufferedInputStream(this.getContentResolver().openInputStream(fileUri));
+        stream.mark(stream.available());
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        // First decode with inJustDecodeBounds=true to check dimensions
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeStream(stream, null, options);
+        stream.reset();
+        options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+        options.inJustDecodeBounds = false;
+        BitmapFactory.decodeStream(stream, null, options);
+        // Decode bitmap with inSampleSize set
+        stream.reset();
+        return BitmapFactory.decodeStream(stream, null, options);
+    }
+
 
 
 }

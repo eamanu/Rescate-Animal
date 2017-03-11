@@ -1,32 +1,37 @@
 package com.eamanu.rescateanimal;
 
-import android.*;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
+import android.graphics.Typeface;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.crash.FirebaseCrash;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
-
-import static android.R.attr.path;
 
 /**
  *  Actividad de com.eamanu.rescateanimal.Denuncia.
@@ -69,7 +74,7 @@ public class DenunciaActivity extends AppCompatActivity{
     private Bitmap imageBitmap;
 
     /**Uri to image to send*/
-    private static Uri uri;
+    private Uri uri;
 
     /**Variable para indicar que se devolvió una imagen de la galera.*/
     private static final int SELECT_FILE = 2;
@@ -83,6 +88,24 @@ public class DenunciaActivity extends AppCompatActivity{
     /**Variable para conocer si se seleccionó un lugar en el mapa*/
     private boolean isDirection = false;
 
+    /**Button Siguiente*/
+    private Button btnSiguiente;
+
+    /**Textview for topics*/
+    private TextView tvFrases;
+
+    /**Frases.*/
+    private ArrayList<String> frases;
+
+    /**Handler.*/
+    private Handler handler;
+
+    /**Runnable.*/
+    private Runnable runnable;
+
+    /**Interval time*/
+    private static final int interval = 10000;
+
     /**
      *  Crea la actividad.
      *  @param savedInstanceState
@@ -92,8 +115,39 @@ public class DenunciaActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_denuncia);
 
-        GetPicture = ( Button ) findViewById( R.id.BtnCamera );
-        GetPositionMapButton = ( Button ) findViewById( R.id.BtnMap );
+        this.GetPicture = ( Button ) findViewById( R.id.BtnCamera);
+        this.GetPositionMapButton = ( Button ) findViewById( R.id.BtnMap );
+
+        //Button next
+        btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
+        btnSiguiente.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Medium.ttf"));
+        btnSiguiente.setText("Siguiente");
+
+        // frases
+        tvFrases = ( TextView ) findViewById(R.id.tvFrases);
+        tvFrases.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Regular.ttf"));
+
+        putFrases ( tvFrases );
+
+
+    }
+
+    private void putFrases(final TextView tvFrases) {
+        DatabaseReference mDatabaseFrases = FirebaseUtil.getFrases();
+        handler = new Handler();
+
+        mDatabaseFrases.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for( DataSnapshot ds : dataSnapshot.getChildren()){
+                   tvFrases.setText(ds.getValue().toString());
+                }
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
     /**
@@ -125,14 +179,15 @@ public class DenunciaActivity extends AppCompatActivity{
         if (requestCode == REQUEST_CODE){
             if (resultCode == RESULT_OK){
                 setDataPosition(data);
+                this.changeMapSrc( this.GetPositionMapButton);
                 // TODO: Almacenar direccion latitude longtiude provincia pais
             }
         }
         /** Datos proveniente de la actividad de la camera.*/
         if ( requestCode == REQUEST_IMAGE_CAPUTRE ) {
             if (resultCode == RESULT_OK){
-                captureImageFromCamera ( data );
-                this.changePhotoSrc(this.GetPicture);
+                //captureImageFromCamera ( data );
+                this.changePhotoSrc( this.GetPicture );
                 /*TODO: aquí debería guardar la foto para enviarla a firebase*/
             }
         }
@@ -141,7 +196,7 @@ public class DenunciaActivity extends AppCompatActivity{
         if (requestCode == SELECT_FILE ){
             if ( resultCode == RESULT_OK){
                 SelectImageFromGallery ( data ) ;
-                this.changePhotoSrc(this.GetPicture);
+                this.changePhotoSrc( this.GetPicture );
                 /*TODO: Aquí debería guardar la foto para enviarla al firebase*/
             }
         }
@@ -160,6 +215,7 @@ public class DenunciaActivity extends AppCompatActivity{
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(DenunciaActivity.this);
 
         alertBuilder.setTitle("Seleccionar una opción");
+
         alertBuilder.setItems(optionsImages, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -209,9 +265,38 @@ public class DenunciaActivity extends AppCompatActivity{
      * Llama a la cámara para que tome una foto
      */
     private void takePhoto ( ) {
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (intent.resolveActivity(getPackageManager()) != null)
-            startActivityForResult(intent, REQUEST_IMAGE_CAPUTRE );
+        File path;
+
+        if (this.checkExternalStorageWritable()){
+            //path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES + "/MyPictures/");
+            // En la memoria externa
+            path = getExternalFilesDir(Environment.DIRECTORY_PICTURES + "/MyPictures/");
+            Log.w("TEST",path.toString() );
+        }else{
+            // En la memoria Interna
+            path = getFilesDir();
+        }
+
+        // Creo un string para ponerle nombre al la imagen
+        String nameImage = "RescateAnimal_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".jpg" ;
+
+        File imageFile = new File(path, nameImage);
+
+
+        try {
+            imageFile.createNewFile();
+
+            this.uri = Uri.fromFile(imageFile);
+
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, this.uri);
+
+            if (intent.resolveActivity(getPackageManager()) != null)
+                startActivityForResult(intent, REQUEST_IMAGE_CAPUTRE );
+
+        }catch (IOException e){
+            Log.e("ERROR-TakePhoto", "Error: " +  e.getMessage());
+        }
     }
 
     /**
@@ -224,9 +309,10 @@ public class DenunciaActivity extends AppCompatActivity{
         File path;
 
         if (this.checkExternalStorageWritable()){
-            //File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+            //path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES + "/MyPictures/");
             // En la memoria externa
             path = getExternalFilesDir(Environment.DIRECTORY_PICTURES + "/MyPictures/");
+            Log.w("TEST",path.toString() );
         }else{
             // En la memoria Interna
             path = getFilesDir();
@@ -240,7 +326,7 @@ public class DenunciaActivity extends AppCompatActivity{
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream( );
 
         // convierto a jpg
-        imageBitmap.compress(Bitmap.CompressFormat.JPEG,90,byteArrayOutputStream);
+        //imageBitmap.compress(Bitmap.CompressFormat.JPEG,100,byteArrayOutputStream);
 
         // Creo un string para ponerle nombre al la imagen
         String nameImage = "RescateAnimal_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()) + ".jpg" ;
@@ -253,9 +339,12 @@ public class DenunciaActivity extends AppCompatActivity{
         try{
             // Me aseguro que la carpeta existe
             path.mkdirs();
+
             imageFile.createNewFile();
             FileOutputStream os = new FileOutputStream(imageFile);
-            os.write(byteArrayOutputStream.toByteArray());
+            //os.write(byteArrayOutputStream.toByteArray());
+
+            imageBitmap.compress(Bitmap.CompressFormat.JPEG,100, os);
 
             this.uri  = Uri.fromFile(imageFile);
 
@@ -266,16 +355,19 @@ public class DenunciaActivity extends AppCompatActivity{
         }catch (IOException e){
             Log.w("ExternalStorage", "Error Writing" + imageFile, e);
         }
-
     }
 
     /**
      * Lanza actividad que permite elegir una foto de la galería
      */
     private void takePictureFromStorage ( ){
+        /**
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Por favor elige una foto"), SELECT_FILE);*/
+
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(Intent.createChooser(intent, "Por favor elige una foto"), SELECT_FILE);
 
     }
@@ -290,6 +382,11 @@ public class DenunciaActivity extends AppCompatActivity{
 
             }catch (IOException e){
                 Log.w("FromGallery", "Error reading " +e );
+                FirebaseCrash.report(e);
+            }catch (OutOfMemoryError e){
+                Log.w("FromGallery", "Error en la imagen " + e );
+                Toast.makeText(this, "Error en la subida de la imágen, elige otra foto por favor", Toast.LENGTH_SHORT).show();
+                FirebaseCrash.report(e);
             }
         }
     }
@@ -356,12 +453,25 @@ public class DenunciaActivity extends AppCompatActivity{
         }
     }
 
-    private void changePhotoSrc (Button butPhoto){
+    /**
+     * Cambia el color del boton para adjuntar la imagen
+     * @param butCamera boton de la camera.
+     */
+    private void changePhotoSrc ( Button butCamera){
         if (this.isPhoto == false){
             this.isPhoto = true;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                butPhoto.setBackgroundResource(R.drawable.ic_camera_blue);
-            }
+            butCamera.setBackgroundResource(R.drawable.ic_camera_blue);
+        }
+    }
+
+    /**
+     * Cambia el color del boton del mapa
+     * @param butMap boton del mapa.
+     */
+    private void changeMapSrc ( Button butMap){
+        if (this.isDirection== false){
+            this.isDirection = true;
+            butMap.setBackgroundResource(R.drawable.ic_google_maps_blue);
         }
     }
 }

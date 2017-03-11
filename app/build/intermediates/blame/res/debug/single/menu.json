@@ -1,6 +1,18 @@
 [
     {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/menu/activity_user_information_drawer.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/res/menu/activity_user_information_drawer.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/menu/user_information.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/res/menu/user_information.xml"
+    },
+    {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/menu/menu_navview.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/res/menu/menu_navview.xml"
     }
 ]
