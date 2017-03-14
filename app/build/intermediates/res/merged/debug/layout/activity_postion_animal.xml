@@ -35,7 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:id="@+id/OkPosicion"
-                    android:background="@android:color/transparent"
+                    android:background="@drawable/selector"
                     android:layout_alignParentRight="true"
                     android:textSize="20sp"
                     android:textColor="@android:color/white"/>

@@ -2,5 +2,9 @@
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon_launcher_ra.png",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/res/mipmap-xxhdpi/icon_launcher_ra.png"
     }
 ]

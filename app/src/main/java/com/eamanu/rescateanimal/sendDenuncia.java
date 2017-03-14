@@ -26,6 +26,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -81,8 +83,6 @@ public class sendDenuncia extends BaseActivity implements NewDenunciaUploadTaskF
 
     // Referencia al almacenamiento de fotos
     private StorageReference mStorage;
-
-    private static final String userid = "eamanu";
 
     private NewDenunciaUploadTaskFragment mTaskFragment;
 
@@ -177,7 +177,9 @@ public class sendDenuncia extends BaseActivity implements NewDenunciaUploadTaskF
 
         showProgressDialog("Se está mandando el pedido de rescate!!!");
 
-        mTaskFragment.upLoadData(imageBitmap, mThumbnail, userid, this.editComentario.getText().toString(), this.Latitude, this.Longitude,
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        mTaskFragment.upLoadData(imageBitmap, mThumbnail, user.getUid(), this.editComentario.getText().toString(), this.Latitude, this.Longitude,
                 this.Pais, this.Provincia, this.Direccion);
 
         //startActivity(new Intent(sendDenuncia.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));

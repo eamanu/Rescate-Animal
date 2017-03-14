@@ -4,7 +4,6 @@ import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 /**
  * Created by eamanu on 2/20/17.
@@ -25,7 +24,7 @@ public class BaseActivity extends AppCompatActivity{
             @Override
             public void run() {
                 dismissProgressDialog();
-                Toast.makeText(BaseActivity.this, "Error en la descarga de información", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(BaseActivity.this, "Error en la descarga de información", Toast.LENGTH_SHORT).show();
             }
         };
 

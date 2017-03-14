@@ -5,10 +5,13 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.facebook.Profile;
@@ -31,10 +34,12 @@ public class MainActivity extends BaseActivity implements DenunciaViewFragment.O
     /**font.*/
     private Typeface font;
 
-
-
     /**Image view for photo user*/
     private ProfilePictureView ivPhotoUser;
+
+    private DrawerLayout mDrawerLayout;
+
+    private ImageButton btnOpenMyConfig;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +48,18 @@ public class MainActivity extends BaseActivity implements DenunciaViewFragment.O
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer);
+        btnOpenMyConfig = ( ImageButton ) findViewById(R.id.btn_menu);
+
+        btnOpenMyConfig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDrawerLayout.openDrawer(Gravity.LEFT);
+            }
+        });
 
 
         // picture of profile user

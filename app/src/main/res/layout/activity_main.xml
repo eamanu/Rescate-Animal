@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.eamanu.rescateanimal.MainActivity">
+    tools:context="com.eamanu.rescateanimal.MainActivity"
+    android:id="@+id/Drawer"
+    >
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -21,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:theme="@style/AppTheme.AppBarOverlay">
 
+
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
@@ -28,7 +31,19 @@
                     android:background="#000818"
                     app:popupTheme="@style/AppTheme.PopupOverlay"
                     android:titleTextColor="@android:color/white"
-                    android:title="Información denuncia"/>
+                    android:title="Información denuncia">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/btn_menu"
+                            android:background="@android:color/transparent"
+                            android:src="@android:drawable/ic_menu_sort_by_size" />
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
 
             </android.support.design.widget.AppBarLayout>
 

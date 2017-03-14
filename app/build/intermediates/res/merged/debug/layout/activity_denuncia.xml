@@ -48,10 +48,11 @@
         android:layout_below="@+id/bar"
         android:id="@+id/LayoutTextMotivation">
         <TextView
+            android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tvFrases"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:text=""/>
 
     </LinearLayout>

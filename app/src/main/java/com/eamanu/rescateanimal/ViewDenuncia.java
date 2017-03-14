@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.squareup.picasso.Picasso;
 
 
@@ -56,8 +58,7 @@ public class ViewDenuncia extends AppCompatActivity implements ChangeStateDenunc
     /**Fragmet to update denuncia status*/
     private ChangeStateDenunciaTaskFragment changeStateDenunciaTaskFragment;
 
-    /**UserID*/ //TODO: this have to change when we add the Firebase Auth!
-    private String userID = "eamanu";
+    FirebaseUser user;
 
     /**denuncia key*/
     private String denunciakey;
@@ -74,7 +75,6 @@ public class ViewDenuncia extends AppCompatActivity implements ChangeStateDenunc
         lng = intent.getDoubleExtra("Longitude", 0.0);
         url = intent.getStringExtra("URL");
         denunciakey = intent.getStringExtra("DenunciaID");
-        Toast.makeText(this, denunciakey, Toast.LENGTH_SHORT).show();
 
         /**init */
         Photo = ( ImageView ) findViewById( R.id.fotoDenuncia );
@@ -82,6 +82,7 @@ public class ViewDenuncia extends AppCompatActivity implements ChangeStateDenunc
         tvComentario = ( TextView ) findViewById( R.id.tvComentarioDenuncia );
         btnRescate = ( Button ) findViewById( R.id.btnRescatado );
         positionMap = ( ImageView ) findViewById( R.id.positionMap);
+        user = FirebaseAuth.getInstance().getCurrentUser();
 
         putData();
 
@@ -121,7 +122,7 @@ public class ViewDenuncia extends AppCompatActivity implements ChangeStateDenunc
         btnRescate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeStateDenunciaTaskFragment.addNewRescateToUser(userID, denunciakey);
+                changeStateDenunciaTaskFragment.addNewRescateToUser(user.getUid(), denunciakey);
                 // go to main activity
                 startActivity(new Intent(ViewDenuncia.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             }
