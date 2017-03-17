@@ -37,11 +37,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                         <ImageButton
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="16dp"
                             android:id="@+id/btn_menu"
                             android:background="@android:color/transparent"
-                            android:src="@android:drawable/ic_menu_sort_by_size" />
+                            android:src="@drawable/ic_home_white_48dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:id="@+id/tvTituloApp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/btn_menu"
+                            android:textColor="@android:color/white"/>
                     </RelativeLayout>
                 </android.support.v7.widget.Toolbar>
 

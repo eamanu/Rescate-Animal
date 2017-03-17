@@ -2,6 +2,7 @@ package com.eamanu.rescateanimal;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -62,6 +63,9 @@ public class ViewDenuncia extends AppCompatActivity implements ChangeStateDenunc
 
     /**denuncia key*/
     private String denunciakey;
+
+    /*title view denuncia*/
+    private TextView tvViewDenuncia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +131,10 @@ public class ViewDenuncia extends AppCompatActivity implements ChangeStateDenunc
                 startActivity(new Intent(ViewDenuncia.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
             }
         });
+
+        tvViewDenuncia = (TextView) findViewById(R.id.tvViewDenuncia);
+        tvViewDenuncia.setText("Info de la denuncia");
+        tvViewDenuncia.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Regular.ttf"));
     }
 
     /**

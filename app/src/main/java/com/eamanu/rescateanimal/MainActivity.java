@@ -41,6 +41,8 @@ public class MainActivity extends BaseActivity implements DenunciaViewFragment.O
 
     private ImageButton btnOpenMyConfig;
 
+    private TextView tvTituloApp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,6 +88,12 @@ public class MainActivity extends BaseActivity implements DenunciaViewFragment.O
             // set userData
             setUserData();
         }
+
+
+        //set title
+        tvTituloApp = (TextView) findViewById(R.id.tvTituloApp);
+        tvTituloApp.setText("Rescate Animal");
+        tvTituloApp.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Medium.ttf"));
     }
 
     private void setUserData() {
