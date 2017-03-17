@@ -1,7 +1,11 @@
 package com.eamanu.rescateanimal;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -69,6 +73,20 @@ public class DenunciaViewFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+
+        if ( ! isConnectionInternet( ) ){
+            AlertDialog.Builder builder = new AlertDialog.Builder( getActivity());
+            builder.setTitle( "Imposible conectarse a Internet" );
+            builder.setMessage( "Por favor conéctate a la red");
+            builder.setPositiveButton( "OK", new DialogInterface.OnClickListener ( ){
+                @Override
+                public void onClick( DialogInterface dialog, int which ) {
+                    // TODO: ver que onda.
+                }
+            });
+            builder.show( );
+            return;
+        }
 
         // Creo la ref a la DB
         mDatabase = FirebaseUtil.getDenunciasRef();
@@ -211,5 +229,16 @@ public class DenunciaViewFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    /**
+     * check if internet is connected
+     * @return true if connected
+     */
+    private boolean isConnectionInternet ( ){
+        ConnectivityManager connectivityManager  = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isConnectedOrConnecting();
+
     }
 }
