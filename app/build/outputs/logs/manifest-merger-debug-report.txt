@@ -142,7 +142,7 @@ MERGED from [com.android.support:support-compat:25.1.1] /home/eamanu/AndroidStud
 	android:allowBackup
 		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:37:9-35
 	android:icon
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:38:9-44
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:38:9-50
 	android:theme
 		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:41:9-52
 	android:name
