@@ -16,7 +16,7 @@
     <!-- GPS para hacer la denuncia -->
     <uses-feature android:name="android.hardware.location.gps" />
     <!-- Para obtener la posición por red,para la denuncia -->
-    <user-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.location.network" />
     <!-- Para acceder a la cámara -->
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- Usamos la características de la cámara -->
@@ -62,7 +62,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="@string/GoogleMapsApiKey" />
 
         <activity
             android:name=".DenunciaActivity"
