@@ -1,10 +1,10 @@
 [
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+        "source": "/home/eamanu/.android/build-cache/7e0ea227ce236b7bb7bf0a7ae10dc733eaa4c18a/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/res/anim-v21/design_bottom_sheet_slide_out.xml"
+        "source": "/home/eamanu/.android/build-cache/7e0ea227ce236b7bb7bf0a7ae10dc733eaa4c18a/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
     }
 ]

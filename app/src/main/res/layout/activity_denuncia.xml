@@ -42,7 +42,34 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar"
+        android:layout_above="@+id/BtnMap">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container_pic"
+                android:background="#000"
+                tools:context="com.example.android.camera2basic.DenunciaActivity"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/BtnMap"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="getPositionAnimal"
+        android:drawableBottom="@drawable/ic_google_maps"
+        />
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@+id/bar"
@@ -89,6 +116,6 @@
                 android:layout_height="80dp" />
 
         </RelativeLayout>
-    </LinearLayout>
+    </LinearLayout>-->
 
 </RelativeLayout>

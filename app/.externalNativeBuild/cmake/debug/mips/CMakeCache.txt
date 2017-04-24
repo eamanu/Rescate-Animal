@@ -18,10 +18,10 @@
 ANDROID_ABI:UNINITIALIZED=mips
 
 //No help, variable specified on the command line.
-ANDROID_NATIVE_API_LEVEL:UNINITIALIZED=15
+ANDROID_NDK:UNINITIALIZED=/home/eamanu/Android/Sdk/ndk-bundle
 
 //No help, variable specified on the command line.
-ANDROID_NDK:UNINITIALIZED=/home/eamanu/Android/Sdk/ndk-bundle
+ANDROID_PLATFORM:UNINITIALIZED=android-19
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/bin/mipsel-linux-android-ar
@@ -184,10 +184,10 @@ Project_BINARY_DIR:STATIC=/home/eamanu/AndroidStudioProjects/RescateAnimal/app/.
 Project_SOURCE_DIR:STATIC=/home/eamanu/AndroidStudioProjects/RescateAnimal/app
 
 //Path to a library.
-log-lib:FILEPATH=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/liblog.so
+log-lib:FILEPATH=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/liblog.so
 
 //Dependencies for the target
-native-lib_LIB_DEPENDS:STATIC=general;/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/liblog.so;
+native-lib_LIB_DEPENDS:STATIC=general;/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/liblog.so;
 
 
 ########################

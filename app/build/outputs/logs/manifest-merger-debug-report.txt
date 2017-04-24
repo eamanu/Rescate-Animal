@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:2:1-89:12
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:2:1-92:12
 	package
 		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml
@@ -25,266 +25,272 @@ uses-permission#android.permission.READ_CONTACTS
 ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:8:5-72
 	android:name
 		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:8:22-69
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:15:5-79
-	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:15:22-76
-uses-feature#android.hardware.location.gps
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:17:5-66
-	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:17:19-63
-user-feature
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:19:5-70
-	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:19:19-67
 uses-permission#android.permission.CAMERA
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:21:5-65
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:10:5-65
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:21:22-62
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:10:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:11:5-60
+	android:name
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:11:19-57
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:18:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:20:19-63
+user-feature
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:22:5-70
+	android:name
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:22:19-67
 uses-feature#android.hardware.camera2
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:23:5-25:36
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:26:5-28:36
 	android:required
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:25:9-33
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:28:9-33
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:24:9-48
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:27:9-48
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:27:5-81
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:27:22-78
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:30:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:28:5-80
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:31:5-80
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:28:22-77
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:31:22-77
 uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:30:5-87
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:33:5-87
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:30:22-85
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:33:22-85
 uses-permission#android.permission.INTERNET
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:33:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:19:5-66
-MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:18:5-66
-MERGED from [com.google.firebase:firebase-crash:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.0/AndroidManifest.xml:18:5-66
-MERGED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.0/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.firebaseui:firebase-ui-database:0.4.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.4.0/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:20:5-66
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:36:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/.android/build-cache/0fac345217f0c48f51fd83d6c684d3d832bf323f/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:10.2.0] /home/eamanu/.android/build-cache/87e8f99e798058a16c6014ce5507764145c0c27e/output/AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/.android/build-cache/421fdac267d198240ab0e894c556a961199246f7/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/.android/build-cache/4fbb93c4395fe3e05eb2cecae1441ea426c1a673/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/2ae814d70c9c557367a1b2a7632befcbd5719181/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/.android/build-cache/db1d9b5fe318e04650a09302b3fc256e33b870e3/output/AndroidManifest.xml:20:5-66
+MERGED from [com.firebaseui:firebase-ui-database:0.4.0] /home/eamanu/.android/build-cache/8689a3d642efcd4ab164b1f2e41f93f4957dcf04/output/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/aff21b5a8dcc59b67802e73a617ce1e4a591cd88/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:33:22-64
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:36:22-64
 application
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:35:5-87:19
-MERGED from [com.android.support:design:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:transition:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/10.2.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:23:5-27:19
-MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:19:5-26:19
-MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:4:5-8:19
-MERGED from [com.google.android.gms:play-services-cast:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.android.support:mediarouter-v7:24.0.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:palette-v7:24.0.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-clearcut:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.firebase:firebase-config:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-awareness:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.firebase:firebase-crash:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.android.gms:play-services-fitness:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-games:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-drive:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-gass:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.0/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/AndroidManifest.xml:23:5-19
-MERGED from [com.google.firebase:firebase-appindexing:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.0/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-location:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-nearby:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.0/AndroidManifest.xml:5:5-19
-MERGED from [com.google.android.gms:play-services-panorama:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-places:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-plus:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-safetynet:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:23:5-33:19
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.0/AndroidManifest.xml:19:5-19
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-vision:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.0/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-identity:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-wearable:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.0/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/AndroidManifest.xml:24:5-19
-MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.0/AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/AndroidManifest.xml:18:5-20:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:28:5-48:19
-MERGED from [com.android.support:appcompat-v7:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:cardview-v7:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:customtabs:25.0.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-core:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/10.2.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/AndroidManifest.xml:25:5-20
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:38:5-90:19
+MERGED from [com.android.support:design:25.1.1] /home/eamanu/.android/build-cache/7e0ea227ce236b7bb7bf0a7ae10dc733eaa4c18a/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.1] /home/eamanu/.android/build-cache/2685537f43015e8f697027a231cdf952f47ec9ac/output/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:10.2.0] /home/eamanu/.android/build-cache/47ad08c7e0fa6feb57fed07efc4cf0fcd8522f5a/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/.android/build-cache/0fac345217f0c48f51fd83d6c684d3d832bf323f/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:10.2.0] /home/eamanu/.android/build-cache/350c5ddcaffc4791c7c17452d7bdfed1cd462917/output/AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:24.0.0] /home/eamanu/.android/build-cache/f5e6d89c5e5cd870cfac138d0bf73b3f6791eed5/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:palette-v7:24.0.0] /home/eamanu/.android/build-cache/25be8d8dce638786f7bea001a4fe7156793ed7c9/output/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.0] /home/eamanu/.android/build-cache/d2d8327e33cc9c3697f4c9e263b5ef7875125c4a/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:10.2.0] /home/eamanu/.android/build-cache/786d088d66d393d4b196d05be21ce3aae40259e4/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:10.2.0] /home/eamanu/.android/build-cache/72ecf1d131913ec9e88a7d89a5021baccb79d75a/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:10.2.0] /home/eamanu/.android/build-cache/87e8f99e798058a16c6014ce5507764145c0c27e/output/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:10.2.0] /home/eamanu/.android/build-cache/1ace5dfd7c2765dc5b025a2a499826c8b1f31da7/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:10.2.0] /home/eamanu/.android/build-cache/6330140af1acc9adb4f9d00029ee22bd7ef3077d/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:10.2.0] /home/eamanu/.android/build-cache/c01661d1357093efb4436fa905f2e929dd3fc9d8/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.2.0] /home/eamanu/.android/build-cache/580fd3ad57812ba9e0a0ff0c8f6c6f2f56566b6c/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/.android/build-cache/421fdac267d198240ab0e894c556a961199246f7/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.2.0] /home/eamanu/.android/build-cache/deef62cfdfc70ff4707ade139855903ffe3a4599/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/.android/build-cache/4fbb93c4395fe3e05eb2cecae1441ea426c1a673/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.0] /home/eamanu/.android/build-cache/5add8d2a12a54f2c88edbcd5aee2758bc18e8c4f/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:10.2.0] /home/eamanu/.android/build-cache/eef0ac63fcff27b7b56e0b095227c4172d8ab2ca/output/AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:10.2.0] /home/eamanu/.android/build-cache/11da23e3204af252a46d7f47ffa7aed29c860ce9/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:10.2.0] /home/eamanu/.android/build-cache/89c870a41380f11215b3a2912ff18d5d5ac370ce/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.2.0] /home/eamanu/.android/build-cache/dbac480237a72f0b80713ea3c60a00b9cd9df67f/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.0] /home/eamanu/.android/build-cache/152e8640e1b53f792e04d376b995029d3a1a824a/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.0] /home/eamanu/.android/build-cache/1905afd86de3bc1a5f03c687502176e31bdedb66/output/AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/2ae814d70c9c557367a1b2a7632befcbd5719181/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:10.2.0] /home/eamanu/.android/build-cache/694cec7bce479354cc5b3be16be0552ba37b9c84/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:10.2.0] /home/eamanu/.android/build-cache/1bbf07ff0c7591f8e045625d2017e24b9f5747ab/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-wearable:10.2.0] /home/eamanu/.android/build-cache/4a66337d40aae496afaf2992a0bf7e66a9637a8b/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/.android/build-cache/db1d9b5fe318e04650a09302b3fc256e33b870e3/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/eamanu/.android/build-cache/23596d0af35946bfd8a53330c2a1e2df6ab24451/output/AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/.android/build-cache/7f49d1b553f46ab2d9891ae01eaadb2d83dbb45b/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:28:5-48:19
+MERGED from [com.android.support:appcompat-v7:25.1.1] /home/eamanu/.android/build-cache/1900531cb5432e910a851593a2264251236e6f90/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/eamanu/.android/build-cache/33d0ff7cbbb80167e404dc899955a54b6b6451a8/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/eamanu/.android/build-cache/3c63870672eca0a5ae694105f5332f5b7cc1a8bd/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:cardview-v7:25.1.1] /home/eamanu/.android/build-cache/38ba7ddd5a4c5dd271ce52a97d8c9fa39b013894/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:customtabs:25.0.0] /home/eamanu/.android/build-cache/259d44b9816f7c65aaafddc613ea905387e492dd/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v13:25.1.1] /home/eamanu/.android/build-cache/6f95f67c8d35f94b9957ae2e4f6964c0dabb5fae/output/AndroidManifest.xml:25:5-20
+MERGED from [com.google.firebase:firebase-core:10.2.0] /home/eamanu/.android/build-cache/9b9fdc7c60cf866ad34b4d4bf7b7293c66d0815d/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/aff21b5a8dcc59b67802e73a617ce1e4a591cd88/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/.android/build-cache/1f410062caeec34ec0e0acd7c26eed56f492fc8d/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/eamanu/.android/build-cache/8c0bbd375f095354f7dfe8952d05268fd89c654b/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/eamanu/.android/build-cache/20cb26fe7a41fe302ace155aafc7903c6b84eb03/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.1.1] /home/eamanu/.android/build-cache/e2a79563ccdc5b4b4d22251364296cf6250039ff/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] /home/eamanu/.android/build-cache/345320016659891e54b719d411f08801bf17c7b5/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] /home/eamanu/.android/build-cache/e0abf68098ac91f7e44882846caa27901084a8e2/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] /home/eamanu/.android/build-cache/ecb5983f4f7bdacfceae740f2f8f66af283a41cc/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] /home/eamanu/.android/build-cache/fee9c11ff25f63210e9fab87a4eadbc9e82a9bed/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] /home/eamanu/.android/build-cache/d257fa53d63952ad5776a1c5fc16d1b8c95a7c9d/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:39:9-41
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:42:9-41
 	android:supportsRtl
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:40:9-35
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:43:9-35
 	android:allowBackup
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:37:9-35
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:40:9-35
 	android:icon
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:38:9-44
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:41:9-44
 	android:theme
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:41:9-52
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:44:9-52
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:36:9-68
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:39:9-68
 activity#com.eamanu.rescateanimal.MainActivity
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:42:9-51:20
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:45:9-54:20
 	android:label
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:44:13-45
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:47:13-45
 	android:theme
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:45:13-56
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:43:13-41
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:46:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:46:13-50:29
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:49:13-53:29
 action#android.intent.action.MAIN
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:47:17-69
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:50:17-69
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:47:25-66
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:50:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:49:17-77
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:52:17-77
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:49:27-74
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:52:27-74
 activity#com.eamanu.rescateanimal.LoginActivity
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:52:9-54:55
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:55:9-57:55
 	android:label
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:54:13-43
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:57:13-43
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:53:13-42
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:56:13-42
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:63:9-65:55
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:66:9-68:55
 	android:value
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:65:13-52
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:68:13-52
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:64:13-58
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:67:13-58
 activity#com.eamanu.rescateanimal.DenunciaActivity
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:67:9-70:63
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:70:9-73:63
 	android:label
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:70:13-60
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:73:13-60
 	android:configChanges
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:69:13-74
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:72:13-74
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:68:13-45
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:71:13-45
 meta-data#com.google.android.gms.version
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:75:9-77:69
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/AndroidManifest.xml:20:9-121
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:78:9-80:69
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/eamanu/.android/build-cache/20cb26fe7a41fe302ace155aafc7903c6b84eb03/output/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:77:13-66
-	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:76:13-58
-meta-data#com.facebook.sdk.ApplicationId
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:78:9-80:55
-	android:value
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:80:13-52
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:80:13-66
 	android:name
 		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:79:13-58
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:81:9-83:55
+	android:value
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:83:13-52
+	android:name
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:82:13-58
 activity#com.eamanu.rescateanimal.PostionAnimal
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:82:9-84:69
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:85:9-87:69
 	android:label
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:84:13-66
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:87:13-66
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:83:13-42
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:86:13-42
 activity#com.eamanu.rescateanimal.sendDenuncia
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:85:9-50
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:88:9-50
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:85:19-47
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:88:19-47
 activity#com.eamanu.rescateanimal.ViewDenuncia
-ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:86:9-50
+ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:89:9-50
 	android:name
-		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:86:19-47
+		ADDED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml:89:19-47
 uses-sdk
 INJECTED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:transition:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/10.2.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-ads:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:22:5-43
-MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-cast:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:mediarouter-v7:24.0.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:palette-v7:24.0.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-clearcut:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-config:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-awareness:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-crash:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-fitness:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-games:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-drive:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-gass:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-appindexing:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-instantapps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-location:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-nearby:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-panorama:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-places:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-plus:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-safetynet:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-vision:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-wallet:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-identity:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-wearable:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/AndroidManifest.xml:23:5-43
-MERGED from [com.android.support:multidex:1.0.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-storage:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-storage-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.firebaseui:firebase-ui-database:0.4.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.4.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-database:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-database-connection:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.android.support:recyclerview-v7:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:appcompat-v7:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:cardview-v7:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:customtabs:25.0.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-core:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/10.2.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:design:25.1.1] /home/eamanu/.android/build-cache/7e0ea227ce236b7bb7bf0a7ae10dc733eaa4c18a/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.1.1] /home/eamanu/.android/build-cache/2685537f43015e8f697027a231cdf952f47ec9ac/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services:10.2.0] /home/eamanu/.android/build-cache/47ad08c7e0fa6feb57fed07efc4cf0fcd8522f5a/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads:10.2.0] /home/eamanu/.android/build-cache/1161e62238a24238107e971e170851fda7fab1b4/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/.android/build-cache/0fac345217f0c48f51fd83d6c684d3d832bf323f/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.0] /home/eamanu/.android/build-cache/62b8cf7f8d0d51490c202d9d630d83887a3a2d87/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:10.2.0] /home/eamanu/.android/build-cache/350c5ddcaffc4791c7c17452d7bdfed1cd462917/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:24.0.0] /home/eamanu/.android/build-cache/f5e6d89c5e5cd870cfac138d0bf73b3f6791eed5/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:24.0.0] /home/eamanu/.android/build-cache/25be8d8dce638786f7bea001a4fe7156793ed7c9/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.0] /home/eamanu/.android/build-cache/d2d8327e33cc9c3697f4c9e263b5ef7875125c4a/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:10.2.0] /home/eamanu/.android/build-cache/786d088d66d393d4b196d05be21ce3aae40259e4/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:10.2.0] /home/eamanu/.android/build-cache/72ecf1d131913ec9e88a7d89a5021baccb79d75a/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-crash:10.2.0] /home/eamanu/.android/build-cache/87e8f99e798058a16c6014ce5507764145c0c27e/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-fitness:10.2.0] /home/eamanu/.android/build-cache/1ace5dfd7c2765dc5b025a2a499826c8b1f31da7/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:10.2.0] /home/eamanu/.android/build-cache/6330140af1acc9adb4f9d00029ee22bd7ef3077d/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:10.2.0] /home/eamanu/.android/build-cache/c01661d1357093efb4436fa905f2e929dd3fc9d8/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:10.2.0] /home/eamanu/.android/build-cache/580fd3ad57812ba9e0a0ff0c8f6c6f2f56566b6c/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/.android/build-cache/421fdac267d198240ab0e894c556a961199246f7/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:10.2.0] /home/eamanu/.android/build-cache/deef62cfdfc70ff4707ade139855903ffe3a4599/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/.android/build-cache/4fbb93c4395fe3e05eb2cecae1441ea426c1a673/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:10.2.0] /home/eamanu/.android/build-cache/332f8c4af25a9fdb02a6902c9f14996f94158168/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.0] /home/eamanu/.android/build-cache/5add8d2a12a54f2c88edbcd5aee2758bc18e8c4f/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:10.2.0] /home/eamanu/.android/build-cache/eef0ac63fcff27b7b56e0b095227c4172d8ab2ca/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:10.2.0] /home/eamanu/.android/build-cache/11da23e3204af252a46d7f47ffa7aed29c860ce9/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:10.2.0] /home/eamanu/.android/build-cache/89c870a41380f11215b3a2912ff18d5d5ac370ce/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:10.2.0] /home/eamanu/.android/build-cache/dbac480237a72f0b80713ea3c60a00b9cd9df67f/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.0] /home/eamanu/.android/build-cache/152e8640e1b53f792e04d376b995029d3a1a824a/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:10.2.0] /home/eamanu/.android/build-cache/ad9466e5f9de4d4cd493ab4378513b765d42e2a7/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.0] /home/eamanu/.android/build-cache/1905afd86de3bc1a5f03c687502176e31bdedb66/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/2ae814d70c9c557367a1b2a7632befcbd5719181/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:10.2.0] /home/eamanu/.android/build-cache/694cec7bce479354cc5b3be16be0552ba37b9c84/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wallet:10.2.0] /home/eamanu/.android/build-cache/79950ae477683c48b287ebfd5ed16e48783d2a93/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:10.2.0] /home/eamanu/.android/build-cache/1bbf07ff0c7591f8e045625d2017e24b9f5747ab/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wearable:10.2.0] /home/eamanu/.android/build-cache/4a66337d40aae496afaf2992a0bf7e66a9637a8b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/.android/build-cache/db1d9b5fe318e04650a09302b3fc256e33b870e3/output/AndroidManifest.xml:23:5-43
+MERGED from [com.android.support:multidex:1.0.1] /home/eamanu/.android/build-cache/58cf201d57dc927d5bbbb3be209b1c796826dafc/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-storage:10.2.0] /home/eamanu/.android/build-cache/0a53b6f930c49956ec10062aa8ce9010d4c2a9c3/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:10.2.0] /home/eamanu/.android/build-cache/45ee28a74dfd0b17c0e24c44b234fa194f898d5f/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-auth:10.2.0] /home/eamanu/.android/build-cache/23596d0af35946bfd8a53330c2a1e2df6ab24451/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/.android/build-cache/7f49d1b553f46ab2d9891ae01eaadb2d83dbb45b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.firebaseui:firebase-ui-database:0.4.0] /home/eamanu/.android/build-cache/8689a3d642efcd4ab164b1f2e41f93f4957dcf04/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-database:10.2.0] /home/eamanu/.android/build-cache/b5132890b3ae56aa796252e7e77b39c42a9da884/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:10.2.0] /home/eamanu/.android/build-cache/ffd67c6730dc1f91b4dd9d09ca5266d1ad7cff74/output/AndroidManifest.xml:3:5-43
+MERGED from [com.android.support:recyclerview-v7:25.1.1] /home/eamanu/.android/build-cache/d14aebe547f0a8cab12c760a3e109979f240766e/output/AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:25.1.1] /home/eamanu/.android/build-cache/1900531cb5432e910a851593a2264251236e6f90/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/eamanu/.android/build-cache/33d0ff7cbbb80167e404dc899955a54b6b6451a8/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/eamanu/.android/build-cache/3c63870672eca0a5ae694105f5332f5b7cc1a8bd/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:cardview-v7:25.1.1] /home/eamanu/.android/build-cache/38ba7ddd5a4c5dd271ce52a97d8c9fa39b013894/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.0.0] /home/eamanu/.android/build-cache/259d44b9816f7c65aaafddc613ea905387e492dd/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:25.1.1] /home/eamanu/.android/build-cache/6f95f67c8d35f94b9957ae2e4f6964c0dabb5fae/output/AndroidManifest.xml:21:5-23:55
+MERGED from [com.google.firebase:firebase-core:10.2.0] /home/eamanu/.android/build-cache/9b9fdc7c60cf866ad34b4d4bf7b7293c66d0815d/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/aff21b5a8dcc59b67802e73a617ce1e4a591cd88/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/.android/build-cache/1f410062caeec34ec0e0acd7c26eed56f492fc8d/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.0] /home/eamanu/.android/build-cache/8c0bbd375f095354f7dfe8952d05268fd89c654b/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.0] /home/eamanu/.android/build-cache/20cb26fe7a41fe302ace155aafc7903c6b84eb03/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.1.1] /home/eamanu/.android/build-cache/e2a79563ccdc5b4b4d22251364296cf6250039ff/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.1] /home/eamanu/.android/build-cache/345320016659891e54b719d411f08801bf17c7b5/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.1] /home/eamanu/.android/build-cache/e0abf68098ac91f7e44882846caa27901084a8e2/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.1] /home/eamanu/.android/build-cache/ecb5983f4f7bdacfceae740f2f8f66af283a41cc/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.1] /home/eamanu/.android/build-cache/fee9c11ff25f63210e9fab87a4eadbc9e82a9bed/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.1] /home/eamanu/.android/build-cache/d257fa53d63952ad5776a1c5fc16d1b8c95a7c9d/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.1.1] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.1.1] /home/eamanu/.android/build-cache/7e0ea227ce236b7bb7bf0a7ae10dc733eaa4c18a/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml
 		INJECTED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml
@@ -292,260 +298,260 @@ MERGED from [com.android.support:support-compat:25.1.1] /home/eamanu/AndroidStud
 		INJECTED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml
 		INJECTED from /home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-nearby:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.0/AndroidManifest.xml:4:5-78
-MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/AndroidManifest.xml:19:5-78
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:19:5-78
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/.android/build-cache/0fac345217f0c48f51fd83d6c684d3d832bf323f/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:10.2.0] /home/eamanu/.android/build-cache/eef0ac63fcff27b7b56e0b095227c4172d8ab2ca/output/AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/2ae814d70c9c557367a1b2a7632befcbd5719181/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/.android/build-cache/db1d9b5fe318e04650a09302b3fc256e33b870e3/output/AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/aff21b5a8dcc59b67802e73a617ce1e4a591cd88/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:20:22-76
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:20:22-76
 activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:25:9-232
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:25:9-232
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:25:72-181
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:25:72-181
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:25:182-230
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:25:182-230
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:25:19-71
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:25:19-71
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:26:9-131
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:26:9-131
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:26:92-129
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:26:92-129
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/AndroidManifest.xml:26:19-91
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.0] /home/eamanu/.android/build-cache/3f57a432a597c0014093448235eec4f21df96dd0/output/AndroidManifest.xml:26:19-91
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:21:5-67
+ADDED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/.android/build-cache/0fac345217f0c48f51fd83d6c684d3d832bf323f/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/2ae814d70c9c557367a1b2a7632befcbd5719181/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/aff21b5a8dcc59b67802e73a617ce1e4a591cd88/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-analytics:10.2.0] /home/eamanu/.android/build-cache/0fac345217f0c48f51fd83d6c684d3d832bf323f/output/AndroidManifest.xml:24:22-65
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:20:9-25:20
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:20:9-25:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:20:51-74
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:20:51-74
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:20:75-121
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:20:75-121
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:20:19-50
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:20:19-50
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:21:13-24:29
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:21:13-24:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:22:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:22:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:22:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:22:25-87
 category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:23:17-75
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:23:17-75
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/AndroidManifest.xml:23:27-73
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.0] /home/eamanu/.android/build-cache/dfdf5fe43940e96d0ffd94fd1e7c904b83a16faf/output/AndroidManifest.xml:23:27-73
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:20:9-189
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:20:129-162
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:20:163-187
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:20:69-128
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:20:19-68
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:24:9-184
+ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:24:64-87
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:24:88-182
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/AndroidManifest.xml:24:18-63
+		ADDED from [com.google.android.gms:play-services-auth:10.2.0] /home/eamanu/.android/build-cache/89528e1cef37ff37fd7ff0e431b233796a35eb00/output/AndroidManifest.xml:24:18-63
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
-ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:5:9-99
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:5:9-99
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:5:19-97
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:5:19-97
 service#com.google.android.gms.cast.framework.media.MediaNotificationService
-ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:6:9-103
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:6:9-103
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:6:18-101
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:6:18-101
 service#com.google.android.gms.cast.framework.ReconnectionService
-ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:7:9-92
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:7:9-92
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/AndroidManifest.xml:7:18-90
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.0] /home/eamanu/.android/build-cache/7a765e1608eff10f2ffdb4deb8b66d7b7dd05a6c/output/AndroidManifest.xml:7:18-90
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:23:9-27:19
+ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:23:9-27:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:23:88-111
+		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:23:18-87
+		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:23:18-87
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:24:13-26:29
+ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:24:13-26:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:24:28-51
+		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:24:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:25:17-77
+ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/AndroidManifest.xml:25:25-75
+		ADDED from [com.google.firebase:firebase-messaging:10.2.0] /home/eamanu/.android/build-cache/174e2b9c92812a266a94d49bad4d02ef6e237f04/output/AndroidManifest.xml:25:25-75
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/AndroidManifest.xml:20:5-81
-MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.0/AndroidManifest.xml:20:5-81
-MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:22:5-81
+ADDED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/.android/build-cache/421fdac267d198240ab0e894c556a961199246f7/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:10.2.0] /home/eamanu/.android/build-cache/4fbb93c4395fe3e05eb2cecae1441ea426c1a673/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/AndroidManifest.xml:20:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:10.2.0] /home/eamanu/.android/build-cache/421fdac267d198240ab0e894c556a961199246f7/output/AndroidManifest.xml:20:22-79
 service#com.google.android.gms.tagmanager.TagManagerService
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:24:9-134
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:24:9-134
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:24:110-132
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:24:110-132
 	android:exported
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:24:85-109
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:24:85-109
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:24:18-84
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:24:18-84
 activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:25:9-32:20
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:25:9-32:20
 	android:noHistory
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:25:94-118
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:25:94-118
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:25:19-93
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:25:19-93
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:26:13-31:29
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:26:13-31:29
 data
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:27:17-71
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:27:17-71
 	android:scheme
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:27:23-69
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:27:23-69
 action#android.intent.action.VIEW
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:28:17-68
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:28:17-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:28:25-66
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:28:25-66
 category#android.intent.category.BROWSABLE
-ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:30:17-77
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/AndroidManifest.xml:30:27-75
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.0] /home/eamanu/.android/build-cache/8f84144dc5c963fcee9e068dcefea680b44ececc/output/AndroidManifest.xml:30:27-75
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/AndroidManifest.xml:21:5-77
+ADDED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/.android/build-cache/db1d9b5fe318e04650a09302b3fc256e33b870e3/output/AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/AndroidManifest.xml:21:19-51
+		ADDED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/.android/build-cache/db1d9b5fe318e04650a09302b3fc256e33b870e3/output/AndroidManifest.xml:21:19-51
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/AndroidManifest.xml:21:52-75
+		ADDED from [com.google.android.gms:play-services-maps:10.2.0] /home/eamanu/.android/build-cache/db1d9b5fe318e04650a09302b3fc256e33b870e3/output/AndroidManifest.xml:21:52-75
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/.android/build-cache/7f49d1b553f46ab2d9891ae01eaadb2d83dbb45b/output/AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/.android/build-cache/7f49d1b553f46ab2d9891ae01eaadb2d83dbb45b/output/AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/.android/build-cache/7f49d1b553f46ab2d9891ae01eaadb2d83dbb45b/output/AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.2.0] /home/eamanu/.android/build-cache/7f49d1b553f46ab2d9891ae01eaadb2d83dbb45b/output/AndroidManifest.xml:19:19-85
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:29:9-32:66
+ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:29:9-32:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:31:13-96
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:31:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:30:13-57
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:30:13-57
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:33:19-68
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:44:9-47:40
+ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:44:9-47:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:46:13-72
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:46:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:47:13-37
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-android-sdk:4.20.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.20.0/AndroidManifest.xml:45:13-70
+		ADDED from [com.facebook.android:facebook-android-sdk:4.22.0] /home/eamanu/.android/build-cache/0f946009c4ecbdd9368aaa2e8276d9d66fb47943/output/AndroidManifest.xml:45:13-70
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/aff21b5a8dcc59b67802e73a617ce1e4a591cd88/output/AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.0] /home/eamanu/.android/build-cache/aff21b5a8dcc59b67802e73a617ce1e4a591cd88/output/AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:10.2.0] /home/eamanu/.android/build-cache/9fb218d68cdfebfa970cc80391244ec32babad52/output/AndroidManifest.xml:32:16-87
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:30:9-36:20
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:30:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:31:13-35:29
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:31:13-35:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:32:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:33:17-85
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:33:17-85
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:33:25-83
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:33:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:34:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:40:9-119
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:40:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:40:93-117
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:40:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:40:19-92
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:40:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:44:9-48:19
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:44:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:44:83-106
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:44:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:44:18-82
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:44:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:45:13-47:29
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:45:13-47:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:45:28-51
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:45:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:46:17-79
+ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:46:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/AndroidManifest.xml:46:25-77
+		ADDED from [com.google.firebase:firebase-iid:10.2.0] /home/eamanu/.android/build-cache/35e835466ea6cc2b3827f9cc4121cbf97c047375/output/AndroidManifest.xml:46:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/.android/build-cache/1f410062caeec34ec0e0acd7c26eed56f492fc8d/output/AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/.android/build-cache/1f410062caeec34ec0e0acd7c26eed56f492fc8d/output/AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/.android/build-cache/1f410062caeec34ec0e0acd7c26eed56f492fc8d/output/AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/.android/build-cache/1f410062caeec34ec0e0acd7c26eed56f492fc8d/output/AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:10.2.0] /home/eamanu/.android/build-cache/1f410062caeec34ec0e0acd7c26eed56f492fc8d/output/AndroidManifest.xml:6:79-143
