@@ -5,13 +5,17 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="19"
         android:targetSdkVersion="25" />
 
     <!-- To auto-complete the email text field in the log   in form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Para trabajar con la camara -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use

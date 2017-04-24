@@ -1,22 +1,26 @@
 [
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/layout-v21/notification_action.xml"
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/home/eamanu/.android/build-cache/89c870a41380f11215b3a2912ff18d5d5ac370ce/output/res/layout-v21/place_autocomplete_fragment.xml"
     },
     {
-        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.0/res/layout-v21/place_autocomplete_fragment.xml"
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/eamanu/.android/build-cache/1900531cb5432e910a851593a2264251236e6f90/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/fragment_camera2.xml",
+        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/src/main/res/layout-v21/fragment_camera2.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/layout-v21/notification_template_custom_big.xml"
+        "source": "/home/eamanu/.android/build-cache/1900531cb5432e910a851593a2264251236e6f90/output/res/layout-v21/notification_template_custom_big.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/layout-v21/notification_template_icon_group.xml"
+        "source": "/home/eamanu/.android/build-cache/1900531cb5432e910a851593a2264251236e6f90/output/res/layout-v21/notification_template_icon_group.xml"
     },
     {
         "merged": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/home/eamanu/AndroidStudioProjects/RescateAnimal/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/layout-v21/notification_action_tombstone.xml"
+        "source": "/home/eamanu/.android/build-cache/1900531cb5432e910a851593a2264251236e6f90/output/res/layout-v21/notification_action_tombstone.xml"
     }
 ]

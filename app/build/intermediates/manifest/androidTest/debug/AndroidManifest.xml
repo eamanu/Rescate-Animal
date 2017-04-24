@@ -3,7 +3,7 @@
     package="com.eamanu.rescateanimal.test" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="19"
         android:targetSdkVersion="25" />
 
     <instrumentation

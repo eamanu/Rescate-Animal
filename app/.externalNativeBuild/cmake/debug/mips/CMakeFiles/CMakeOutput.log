@@ -1,19 +1,19 @@
-The target system is: Android - 15 - mips
-The host system is: Linux - 4.4.0-59-generic - x86_64
+The target system is: Android - 19 - mips
+The host system is: Linux - 4.4.0-72-generic - x86_64
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/eamanu/AndroidStudioProjects/RescateAnimal/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_b4452"
-[1/2] Building C object CMakeFiles/cmTC_b4452.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_b4452
+Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_92f2d"
+[1/2] Building C object CMakeFiles/cmTC_92f2d.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_92f2d
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/eamanu/AndroidStudioProjects/RescateAnimal/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_7c6c5"
-[1/2] Building C object CMakeFiles/cmTC_7c6c5.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_7c6c5
+Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_44deb"
+[1/2] Building C object CMakeFiles/cmTC_44deb.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_44deb
 Android clang version 3.8.256229  (based on LLVM 3.8.256229)
 Target: mipsel-none-linux-android
 Thread model: posix
@@ -24,16 +24,16 @@ Candidate multilib: mips-r6;@march=mips32r6
 Candidate multilib: mips-r2;@march=mips32r2
 Candidate multilib: .;
 Selected multilib: .;
- "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_7c6c5 /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_7c6c5.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtend_android.o
+ "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips -pie -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_44deb /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_44deb.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(mipsel-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/eamanu/AndroidStudioProjects/RescateAnimal/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_7c6c5"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_7c6c5.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_7c6c5]
+  ignore line: [Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_44deb"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_44deb.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_44deb]
   ignore line: [Android clang version 3.8.256229  (based on LLVM 3.8.256229)]
   ignore line: [Target: mipsel-none-linux-android]
   ignore line: [Thread model: posix]
@@ -48,11 +48,12 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [Selected multilib: .]
   ignore line: []
-  link line: [ "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_7c6c5 /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_7c6c5.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtend_android.o]
+  link line: [ "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips -pie -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_44deb /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_44deb.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtend_android.o]
     arg [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld] ==> ignore
-    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips] ==> ignore
+    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips] ==> ignore
+    arg [-pie] ==> ignore
     arg [-zrelro] ==> ignore
-    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips] ==> ignore
+    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
@@ -60,13 +61,13 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7c6c5] ==> ignore
-    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
+    arg [cmTC_44deb] ==> ignore
+    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x]
     arg [-L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib]
-    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib]
+    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib]
     arg [-L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib]
-    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
     arg [--build-id] ==> ignore
     arg [--warn-shared-textrel] ==> ignore
     arg [--fatal-warnings] ==> ignore
@@ -85,39 +86,39 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_7c6c5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_44deb.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtend_android.o] ==> ignore
+    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
   collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x] ==> [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x]
   collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib]
-  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
   collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib]
-  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
   implicit libs: [dl;c;dl]
-  implicit dirs: [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x;/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib;/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+  implicit dirs: [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x;/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib;/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
   implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/eamanu/AndroidStudioProjects/RescateAnimal/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_e4fef"
-[1/2] Building CXX object CMakeFiles/cmTC_e4fef.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_e4fef
+Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_bd83a"
+[1/2] Building CXX object CMakeFiles/cmTC_bd83a.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_bd83a
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/eamanu/AndroidStudioProjects/RescateAnimal/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_5de5d"
-[1/2] Building CXX object CMakeFiles/cmTC_5de5d.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_5de5d
+Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_aa94e"
+[1/2] Building CXX object CMakeFiles/cmTC_aa94e.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_aa94e
 Android clang version 3.8.256229  (based on LLVM 3.8.256229)
 Target: mipsel-none-linux-android
 Thread model: posix
@@ -128,16 +129,16 @@ Candidate multilib: mips-r6;@march=mips32r6
 Candidate multilib: mips-r2;@march=mips32r2
 Candidate multilib: .;
 Selected multilib: .;
- "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_5de5d /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_5de5d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtend_android.o
+ "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips -pie -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_aa94e /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_aa94e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(mipsel-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/eamanu/AndroidStudioProjects/RescateAnimal/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_5de5d"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_5de5d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_5de5d]
+  ignore line: [Run Build Command:"/home/eamanu/Android/Sdk/cmake/3.6.3155560/bin/ninja" "cmTC_aa94e"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_aa94e.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_aa94e]
   ignore line: [Android clang version 3.8.256229  (based on LLVM 3.8.256229)]
   ignore line: [Target: mipsel-none-linux-android]
   ignore line: [Thread model: posix]
@@ -152,11 +153,12 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [Selected multilib: .]
   ignore line: []
-  link line: [ "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_5de5d /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_5de5d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtend_android.o]
+  link line: [ "/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld" --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips -pie -z relro --sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips --build-id --eh-frame-hdr -m elf32ltsmip -dynamic-linker /system/bin/linker -o cmTC_aa94e /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtbegin_dynamic.o -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib -L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib -L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_aa94e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtend_android.o]
     arg [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/bin/ld] ==> ignore
-    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips] ==> ignore
+    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips] ==> ignore
+    arg [-pie] ==> ignore
     arg [-zrelro] ==> ignore
-    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips] ==> ignore
+    arg [--sysroot=/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
@@ -164,13 +166,13 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5de5d] ==> ignore
-    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
+    arg [cmTC_aa94e] ==> ignore
+    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x]
     arg [-L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib]
-    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib]
+    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib]
     arg [-L/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib]
-    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+    arg [-L/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib] ==> dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
     arg [--build-id] ==> ignore
     arg [--warn-shared-textrel] ==> ignore
     arg [--fatal-warnings] ==> ignore
@@ -189,7 +191,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_5de5d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_aa94e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -199,18 +201,18 @@ Parsed CXX implicit link information from above output:
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib/crtend_android.o] ==> ignore
+    arg [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib/crtend_android.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
   remove lib [gcc]
   collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x] ==> [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x]
   collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib/../lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib]
-  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib/../lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib/../lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
   collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x/../../../../mipsel-linux-android/lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib]
-  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+  collapse library dir [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib] ==> [/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
   implicit libs: [stdc++;m;dl;c;dl]
-  implicit dirs: [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x;/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib;/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-15/arch-mips/usr/lib]
+  implicit dirs: [/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x;/home/eamanu/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib;/home/eamanu/Android/Sdk/ndk-bundle/platforms/android-19/arch-mips/usr/lib]
   implicit fwks: []
 
 
