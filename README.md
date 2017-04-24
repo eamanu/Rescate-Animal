@@ -19,3 +19,6 @@ Uitilizar el issues para agregar bugs.
 
 ## Documentación
 Utilizar Javadoc para documentar
+
+## Contribuir
+Ver CONTRIBUTE.md

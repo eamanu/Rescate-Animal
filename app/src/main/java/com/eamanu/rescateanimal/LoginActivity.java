@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         // Title app
         TitleApp = (TextView) findViewById(R.id.tvRescateAnimalLogin);
         TitleApp.setTypeface(Typeface.createFromAsset(getAssets(), "RobotoTTF/Roboto-Regular.ttf"));
-        TitleApp.setText("SOSPET \n Rescate Animal");
+        TitleApp.setText("Rescate Animal");
 
         // Set up the login form.
 
